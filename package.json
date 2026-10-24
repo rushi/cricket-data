@@ -1,0 +1,14 @@
+{
+  "name": "cricket-data",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "verify": "node verify.mjs",
+    "site": "node site.mjs",
+    "serve": "node serve.mjs"
+  },
+  "devDependencies": {
+    "zx": "8.8.5"
+  }
+}
