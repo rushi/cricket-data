@@ -2,7 +2,9 @@
 
 Cricket data published as a SQLite database on GitHub Pages, explorable in
 the browser with a self-hosted, custom-themed copy of
-[Datasette Lite](https://github.com/simonw/datasette-lite). It is a tool for exploring and publishing data. It helps people take data of any shape, analyze and explore it,
+[Datasette Lite](https://github.com/simonw/datasette-lite), which runs
+[Datasette](https://datasette.io/) in the browser to search, facet, query
+and export the data without a server.
 
 ## Data
 
