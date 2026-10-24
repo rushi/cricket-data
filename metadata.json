@@ -1,0 +1,16 @@
+{
+  "title": "Cricket data",
+  "description": "Cricket players, teams and stats, explorable with Datasette.",
+  "databases": {
+    "cricket": {
+      "tables": {
+        "countries": {
+          "description": "Cricket-playing countries."
+        },
+        "players": {
+          "description": "Women's international players."
+        }
+      }
+    }
+  }
+}
