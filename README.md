@@ -7,29 +7,46 @@ the browser with a self-hosted, custom-themed copy of
 ## Data
 
 Source CSVs live in `data/`. The men's and women's CSVs share a schema and
-are merged at build time (gender is a column). Currently loaded into
-`cricket.db`:
+are merged at build time (gender is a column). `cricket.db` contains:
 
-| Table       | Source                                                              | Notes                                   |
-| ----------- | ------------------------------------------------------------------- | --------------------------------------- |
-| `countries` | `data/countries.csv`                                                |                                         |
-| `players`   | `data/players-men-international.csv` + `...-women-...`              | full-text search on names               |
-| `teams`     | `data/teams.csv`                                                    | full-text search on names               |
-| `stats`     | `data/stats-men-international.csv` + `...-women-...`                | facets on format and gender             |
-| `formats`   | derived from `stats`                                                | maps `classId` to format name + gender  |
+| Table / view    | Source                                                 | Notes                                                    |
+| --------------- | ------------------------------------------------------ | -------------------------------------------------------- |
+| `countries`     | `data/countries.csv`                                   |                                                          |
+| `players`       | `data/players-men-international.csv` + `...-women-...` | full-text search on names; bowling styles as JSON arrays |
+| `teams`         | `data/teams.csv`                                       | full-text search on names                                |
+| `stats`         | `data/stats-men-international.csv` + `...-women-...`   | facets on format and gender                              |
+| `formats`       | derived from `stats`                                   | maps `classId` to format name + gender                   |
+| `styles`        | `STYLES` in `build.mjs`                                | batting/bowling style code to label                      |
+| `player_stats`  | view: `stats` + `players` + `countries`                | adds country, styles and role; searchable by name        |
+| `career_totals` | view over `player_stats`                               | one row per player, summed across formats                |
 
-The build also cleans the data (`-` placeholders become NULL, `isCountry`
-becomes a real boolean, format names are normalized), adds foreign keys,
-and vacuums the db. `metadata.json` defines facets, column labels, default
-sorts and canned leaderboard queries.
+The build also cleans the data:
+
+- `-` placeholders and blank strings become NULL.
+- `bat_highScore` (`'400*'`) gets sortable `bat_highScoreRuns` and
+  `bat_highScoreNotOut` columns. `bowl_bestInnings` and `bowl_bestMatch`
+  (`'10/53'`) get `...Wickets` and `...Runs` columns.
+- Style codes (`rfm`, `sla`) become labels. Multi-valued bowling styles
+  (`rfm|lb`) become JSON arrays so Datasette facets each style.
+- `players.hasStats` flags the players with a `stats` row.
+- `isCountry` becomes a real boolean, format names are normalized, and
+  team/country image paths become absolute ESPNcricinfo CDN URLs.
+
+`metadata.json` defines facets, column labels, label columns, default
+sorts and canned queries. The canned queries take `format`, `gender` and
+`country` parameters (blank means all), so one query covers every
+leaderboard. `verify.mjs` checks foreign keys, parsed columns and blank
+values. The site build fails if any check fails.
 
 ## Building locally
 
-Requires [sqlite-utils](https://sqlite-utils.datasette.io/):
+Requires Node 24, Python 3, and [sqlite-utils](https://sqlite-utils.datasette.io/):
 
 ```sh
-pip install sqlite-utils   # or: brew install sqlite-utils
-./build.sh                 # builds cricket.db
+pip install sqlite-utils==4.2.1   # or: brew install sqlite-utils
+npm install
+npm run build                     # builds cricket.db
+npm run verify                    # checks it
 ```
 
 Browse locally with [Datasette](https://datasette.io/):
@@ -41,25 +58,26 @@ datasette cricket.db -m metadata.json
 ## Previewing the full site
 
 ```sh
-./serve.sh   # builds _site/ and serves it at http://localhost:8000
+npm run serve   # builds _site/ and serves it at http://localhost:8000
 ```
 
-`site.sh` assembles `_site/`: the db, the landing page, `custom.css` (the
+`site.mjs` assembles `_site/`: the db, the landing page, `custom.css` (the
 theme), and a pinned copy of Datasette Lite (commit is pinned at the top
-of the script) with the theme stylesheet injected.
+of the script) with the theme stylesheet injected. Landing page links
+install the `datasette-pretty-json` plugin through Datasette Lite's
+`?install=` parameter.
 
 ## Deployment
 
 Pushing to `main` runs `.github/workflows/deploy.yml`, which runs
-`site.sh` and publishes `_site/` to GitHub Pages.
+`npm run site` and publishes `_site/` to GitHub Pages.
 
 One-time setup: in the repo's **Settings → Pages**, set **Source** to
 **GitHub Actions**.
 
 ## Adding more CSVs
 
-Add another `sqlite-utils insert` line to `build.sh`, add the table's
-entry to `metadata.json` and a card in `index.html`, and push. Row counts
-and the db size on the landing page are generated from the db by
-`site.sh` (via `{{tokens}}` in `index.html`), so they stay in sync
-automatically.
+Add an `insertCsv` call to `load()` in `build.mjs`, add the table's entry
+to `metadata.json` and a card in `index.html`, and push. Row counts and
+the db size on the landing page are generated from the db by `site.mjs`
+(via `{{tokens}}` in `index.html`); add new tables to `COUNTED_TABLES`.

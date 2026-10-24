@@ -128,6 +128,28 @@
       color: var(--ink);
     }
     .btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
+    .search {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .search input {
+      flex: 1;
+      min-width: 0;
+      padding: 0.6rem 0.9rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font: inherit;
+    }
+    .search input:focus {
+      outline: 2px solid var(--accent);
+      outline-offset: -1px;
+    }
+    .search button {
+      border: 0;
+      cursor: pointer;
+      font: inherit;
+    }
     footer {
       margin-top: 4rem;
       padding-top: 1.5rem;
@@ -149,13 +171,26 @@
     </header>
 
     <div class="stats">
-      <div class="stat"><div class="num">5</div><div class="label">tables</div></div>
+      <div class="stat"><div class="num">{{table_count}}</div><div class="label">tables</div></div>
       <div class="stat"><div class="num">{{total_rows}}</div><div class="label">rows</div></div>
       <div class="stat"><div class="num">{{db_size}}</div><div class="label">SQLite database</div></div>
     </div>
 
+    <form class="search" id="search" role="search">
+      <input type="search" name="q" placeholder="Search players, e.g. Tendulkar" aria-label="Search players" required>
+      <button class="btn btn-primary" type="submit">Search</button>
+    </form>
+
     <h2>Explore</h2>
     <div class="tables">
+      <a class="card" data-path="/cricket/player_stats">
+        <span class="name">player_stats</span>
+        <span class="desc">Stats by player and format with country, styles and role. Facet by any of them</span>
+      </a>
+      <a class="card" data-path="/cricket/career_totals">
+        <span class="name">career_totals</span>
+        <span class="desc">Each player's career summed across all formats</span>
+      </a>
       <a class="card" data-path="/cricket/players">
         <span class="name">players</span>
         <span class="desc">Men's and women's international players — full-text search on names</span>
@@ -170,29 +205,73 @@
 
     <h2>Leaderboards</h2>
     <div class="tables">
-      <a class="card" data-path="/cricket/most_test_runs">
-        <span class="name">Most Test runs</span>
-        <span class="desc">All-time Test run-scorers, men and women</span>
+      <a class="card" data-path="/cricket/most_runs?format=Tests&gender=M&country=">
+        <span class="name">Most runs</span>
+        <span class="desc">Men's Tests. Change format, gender or country in the form</span>
       </a>
-      <a class="card" data-path="/cricket/most_odi_runs">
-        <span class="name">Most ODI runs</span>
-        <span class="desc">All-time ODI run-scorers, men and women</span>
+      <a class="card" data-path="/cricket/most_runs?format=ODIs&gender=F&country=">
+        <span class="name">Most runs, women's ODIs</span>
+        <span class="desc">Same query, different filters</span>
       </a>
-      <a class="card" data-path="/cricket/most_t20i_runs">
-        <span class="name">Most T20I runs</span>
-        <span class="desc">All-time T20I run-scorers, men and women</span>
+      <a class="card" data-path="/cricket/most_wickets?format=Tests&gender=M&country=">
+        <span class="name">Most wickets</span>
+        <span class="desc">Men's Tests</span>
       </a>
-      <a class="card" data-path="/cricket/most_test_wickets">
-        <span class="name">Most Test wickets</span>
-        <span class="desc">All-time Test wicket-takers, men and women</span>
+      <a class="card" data-path="/cricket/highest_scores?format=Tests&gender=&country=">
+        <span class="name">Highest individual scores</span>
+        <span class="desc">Tests, men and women</span>
       </a>
-      <a class="card" data-path="/cricket/best_test_batting_average">
-        <span class="name">Best Test batting average</span>
-        <span class="desc">Minimum 20 innings</span>
+      <a class="card" data-path="/cricket/best_bowling_figures?format=ODIs&gender=&country=">
+        <span class="name">Best bowling figures</span>
+        <span class="desc">ODIs, men and women</span>
       </a>
-      <a class="card" data-path="/cricket/best_test_bowling_average">
-        <span class="name">Best Test bowling average</span>
-        <span class="desc">Minimum 50 wickets</span>
+      <a class="card" data-path="/cricket/best_batting_average?format=Tests&gender=M&country=&min_innings=20">
+        <span class="name">Best batting average</span>
+        <span class="desc">Men's Tests, minimum 20 innings</span>
+      </a>
+      <a class="card" data-path="/cricket/best_bowling_average?format=Tests&gender=M&country=&min_wickets=50">
+        <span class="name">Best bowling average</span>
+        <span class="desc">Men's Tests, minimum 50 wickets</span>
+      </a>
+      <a class="card" data-path="/cricket/best_strike_rate?format=T20Is&gender=M&country=&min_balls=500">
+        <span class="name">Best T20I strike rate</span>
+        <span class="desc">Men, minimum 500 balls faced</span>
+      </a>
+      <a class="card" data-path="/cricket/most_five_wicket_hauls?format=Tests&gender=&country=">
+        <span class="name">Most 5-wicket hauls</span>
+        <span class="desc">Tests, men and women</span>
+      </a>
+      <a class="card" data-path="/cricket/allrounders?format=Tests&gender=M&country=&min_runs=1000&min_wickets=50">
+        <span class="name">All-rounders</span>
+        <span class="desc">1,000 runs and 50 wickets, ranked by batting minus bowling average</span>
+      </a>
+    </div>
+
+    <h2>Try these</h2>
+    <div class="tables">
+      <a class="card" data-path="/cricket/player_profile?name=Kohli">
+        <span class="name">Player profile</span>
+        <span class="desc">One player across every format</span>
+      </a>
+      <a class="card" data-path="/cricket/compare_players?player_a=Tendulkar&player_b=Ponting&format=">
+        <span class="name">Compare two players</span>
+        <span class="desc">Side by side, format by format</span>
+      </a>
+      <a class="card" data-path="/cricket/country_summary?format=Tests&gender=M">
+        <span class="name">Country summary</span>
+        <span class="desc">Players, runs, hundreds and wickets per country</span>
+      </a>
+      <a class="card" data-path="/cricket/batting_hand_split?format=ODIs&gender=M&country=&min_innings=20">
+        <span class="name">Left-handers vs right-handers</span>
+        <span class="desc">Average and strike rate by batting hand</span>
+      </a>
+      <a class="card" data-path="/cricket/youngest_players?gender=&country=">
+        <span class="name">Youngest players</span>
+        <span class="desc">Most recently born internationals</span>
+      </a>
+      <a class="card" data-path="/cricket/oldest_players?gender=&country=">
+        <span class="name">Oldest players</span>
+        <span class="desc">Earliest born internationals</span>
       </a>
     </div>
 
@@ -212,6 +291,11 @@
         <span class="name">formats</span>
         <span class="desc">Formats of the game referenced by stats</span>
         <span class="rows">{{formats_rows}} rows</span>
+      </a>
+      <a class="card" data-path="/cricket/styles">
+        <span class="name">styles</span>
+        <span class="desc">Batting and bowling style codes and their labels</span>
+        <span class="rows">{{styles_rows}} rows</span>
       </a>
     </div>
 
@@ -233,10 +317,17 @@
     const dbUrl = new URL("cricket.db", location.href).href;
     const metadataUrl = new URL("metadata.json", location.href).href;
     const liteBase = "lite/?url=" + encodeURIComponent(dbUrl) +
-                     "&metadata=" + encodeURIComponent(metadataUrl);
+                     "&metadata=" + encodeURIComponent(metadataUrl) +
+                     "&install=datasette-pretty-json";
     for (const a of document.querySelectorAll("a[data-path]")) {
       a.href = liteBase + "#" + a.dataset.path;
     }
+
+    document.getElementById("search").addEventListener("submit", (event) => {
+      event.preventDefault();
+      const query = new FormData(event.target).get("q").trim();
+      location.href = liteBase + "#/cricket/players?_search=" + encodeURIComponent(query);
+    });
   </script>
 </body>
 </html>
