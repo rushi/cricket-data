@@ -6,16 +6,22 @@ the browser with a self-hosted, custom-themed copy of
 
 ## Data
 
-Source CSVs live in `data/`. Currently loaded into `cricket.db`:
+Source CSVs live in `data/`. The men's and women's CSVs share a schema and
+are merged at build time (gender is a column). Currently loaded into
+`cricket.db`:
 
-| Table           | Source                                 | Rows  |
-| --------------- | -------------------------------------- | ----- |
-| `countries`     | `data/countries.csv`                   | 116   |
-| `players_men`   | `data/players-men-international.csv`   | 4,758 |
-| `players_women` | `data/players-women-international.csv` | 1,502 |
-| `teams`         | `data/teams.csv`                       | 4,124 |
-| `stats_men`     | `data/stats-men-international.csv`     | 6,805 |
-| `stats_women`   | `data/stats-women-international.csv`   | 2,608 |
+| Table       | Source                                                              | Notes                                   |
+| ----------- | ------------------------------------------------------------------- | --------------------------------------- |
+| `countries` | `data/countries.csv`                                                |                                         |
+| `players`   | `data/players-men-international.csv` + `...-women-...`              | full-text search on names               |
+| `teams`     | `data/teams.csv`                                                    | full-text search on names               |
+| `stats`     | `data/stats-men-international.csv` + `...-women-...`                | facets on format and gender             |
+| `formats`   | derived from `stats`                                                | maps `classId` to format name + gender  |
+
+The build also cleans the data (`-` placeholders become NULL, `isCountry`
+becomes a real boolean, format names are normalized), adds foreign keys,
+and vacuums the db. `metadata.json` defines facets, column labels, default
+sorts and canned leaderboard queries.
 
 ## Building locally
 
@@ -52,5 +58,8 @@ One-time setup: in the repo's **Settings → Pages**, set **Source** to
 
 ## Adding more CSVs
 
-Add another `sqlite-utils insert` line to `build.sh`, update the table
-above and the cards/stats in `index.html`, and push.
+Add another `sqlite-utils insert` line to `build.sh`, add the table's
+entry to `metadata.json` and a card in `index.html`, and push. Row counts
+and the db size on the landing page are generated from the db by
+`site.sh` (via `{{tokens}}` in `index.html`), so they stay in sync
+automatically.

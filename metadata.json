@@ -5,22 +5,115 @@
     "cricket": {
       "tables": {
         "countries": {
-          "description": "Cricket-playing countries."
+          "description": "Cricket-playing countries.",
+          "columns": {
+            "name": { "label": "Name" },
+            "shortName": { "label": "Short name" },
+            "abbreviation": { "label": "Abbreviation" },
+            "slug": { "label": "Slug" },
+            "imageUrl": { "label": "Image URL" }
+          }
         },
-        "players_men": {
-          "description": "Men's international players."
-        },
-        "players_women": {
-          "description": "Women's international players."
+        "players": {
+          "description": "Men's and women's international players. Full-text search available on names.",
+          "facets": ["gender", "countryId", "playingRoles", "battingStyles", "bowlingStyles"],
+          "columns": {
+            "name": { "label": "Name" },
+            "longName": { "label": "Long name" },
+            "fullName": { "label": "Full name" },
+            "slug": { "label": "Slug" },
+            "gender": { "label": "Gender" },
+            "dateOfBirth": { "label": "Date of birth" },
+            "countryId": { "label": "Country" },
+            "battingStyles": { "label": "Batting style" },
+            "bowlingStyles": { "label": "Bowling style" },
+            "playingRoles": { "label": "Playing role" }
+          }
         },
         "teams": {
-          "description": "International and domestic teams."
+          "description": "International and domestic teams. Full-text search available on names.",
+          "facets": ["isCountry", "countryId"],
+          "columns": {
+            "name": { "label": "Name" },
+            "longName": { "label": "Long name" },
+            "abbreviation": { "label": "Abbreviation" },
+            "slug": { "label": "Slug" },
+            "isCountry": { "label": "Is a country" },
+            "countryId": { "label": "Country" },
+            "imageUrl": { "label": "Image URL" }
+          }
         },
-        "stats_men": {
-          "description": "Men's international career stats by format."
+        "formats": {
+          "description": "Formats of the game (Tests, ODIs, T20Is) referenced by stats.classId.",
+          "columns": {
+            "name": { "label": "Name" },
+            "gender": { "label": "Gender" }
+          }
         },
-        "stats_women": {
-          "description": "Women's international career stats by format."
+        "stats": {
+          "description": "International career stats by player and format.",
+          "facets": ["format", "gender"],
+          "sort_desc": "bat_runs",
+          "columns": {
+            "playerId": { "label": "Player" },
+            "longName": { "label": "Player" },
+            "classId": { "label": "Format" },
+            "format": { "label": "Format" },
+            "gender": { "label": "Gender" },
+            "bat_matches": { "label": "Matches" },
+            "bat_innings": { "label": "Innings" },
+            "bat_notOuts": { "label": "Not outs" },
+            "bat_runs": { "label": "Runs" },
+            "bat_highScore": { "label": "High score" },
+            "bat_average": { "label": "Average" },
+            "bat_balls": { "label": "Balls faced" },
+            "bat_strikeRate": { "label": "Strike rate" },
+            "bat_hundreds": { "label": "100s" },
+            "bat_fifties": { "label": "50s" },
+            "bat_fours": { "label": "Fours" },
+            "bat_sixes": { "label": "Sixes" },
+            "bat_catches": { "label": "Catches" },
+            "bat_stumpings": { "label": "Stumpings" },
+            "bowl_matches": { "label": "Matches" },
+            "bowl_innings": { "label": "Innings" },
+            "bowl_balls": { "label": "Balls bowled" },
+            "bowl_runsConceded": { "label": "Runs conceded" },
+            "bowl_wickets": { "label": "Wickets" },
+            "bowl_bestInnings": { "label": "Best innings" },
+            "bowl_bestMatch": { "label": "Best match" },
+            "bowl_average": { "label": "Average" },
+            "bowl_economy": { "label": "Economy" },
+            "bowl_strikeRate": { "label": "Strike rate" },
+            "bowl_fourWickets": { "label": "4-wicket hauls" },
+            "bowl_fiveWickets": { "label": "5-wicket hauls" },
+            "bowl_tenWickets": { "label": "10-wicket hauls" }
+          }
+        }
+      },
+      "queries": {
+        "most_test_runs": {
+          "title": "Most Test runs",
+          "sql": "select longName, gender, bat_matches, bat_innings, bat_runs, bat_average, bat_hundreds from stats where format = 'Tests' order by bat_runs desc limit 100"
+        },
+        "most_odi_runs": {
+          "title": "Most ODI runs",
+          "sql": "select longName, gender, bat_matches, bat_innings, bat_runs, bat_average, bat_hundreds from stats where format = 'ODIs' order by bat_runs desc limit 100"
+        },
+        "most_t20i_runs": {
+          "title": "Most T20I runs",
+          "sql": "select longName, gender, bat_matches, bat_innings, bat_runs, bat_average, bat_strikeRate from stats where format = 'T20Is' order by bat_runs desc limit 100"
+        },
+        "most_test_wickets": {
+          "title": "Most Test wickets",
+          "sql": "select longName, gender, bowl_matches, bowl_wickets, bowl_average, bowl_economy, bowl_fiveWickets from stats where format = 'Tests' order by bowl_wickets desc limit 100"
+        },
+        "best_test_batting_average": {
+          "title": "Best Test batting average (min 20 innings)",
+          "sql": "select longName, gender, bat_innings, bat_runs, bat_average, bat_hundreds from stats where format = 'Tests' and bat_innings >= 20 order by bat_average desc limit 100"
+        },
+        "best_test_bowling_average": {
+          "title": "Best Test bowling average (min 50 wickets)",
+          "sql": "select longName, gender, bowl_matches, bowl_wickets, bowl_average, bowl_economy from stats where format = 'Tests' and bowl_wickets >= 50 order by bowl_average asc limit 100"
         }
       }
     }

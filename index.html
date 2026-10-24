@@ -4,6 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cricket data</title>
+  <meta name="description" content="A SQLite database of international cricket players, teams and career stats — explorable in your browser with Datasette Lite, no server or install needed.">
+  <meta property="og:title" content="Cricket data">
+  <meta property="og:description" content="Explore 6,260 international cricketers and their career stats in your browser — full-text search, facets and leaderboards, powered by Datasette Lite.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <style>
     :root {
       --accent: #4f46e5;
@@ -144,36 +149,50 @@
     </header>
 
     <div class="stats">
-      <div class="stat"><div class="num">6</div><div class="label">tables</div></div>
-      <div class="stat"><div class="num">19,913</div><div class="label">rows</div></div>
-      <div class="stat"><div class="num" id="db-size">2.0 MB</div><div class="label">SQLite database</div></div>
+      <div class="stat"><div class="num">5</div><div class="label">tables</div></div>
+      <div class="stat"><div class="num">{{total_rows}}</div><div class="label">rows</div></div>
+      <div class="stat"><div class="num">{{db_size}}</div><div class="label">SQLite database</div></div>
     </div>
 
-    <h2>Players</h2>
+    <h2>Explore</h2>
     <div class="tables">
-      <a class="card" data-path="/cricket/players_men">
-        <span class="name">players_men</span>
-        <span class="desc">Men's international players</span>
-        <span class="rows">4,758 rows</span>
+      <a class="card" data-path="/cricket/players">
+        <span class="name">players</span>
+        <span class="desc">Men's and women's international players — full-text search on names</span>
+        <span class="rows">{{players_rows}} rows</span>
       </a>
-      <a class="card" data-path="/cricket/players_women">
-        <span class="name">players_women</span>
-        <span class="desc">Women's international players</span>
-        <span class="rows">1,502 rows</span>
+      <a class="card" data-path="/cricket/stats">
+        <span class="name">stats</span>
+        <span class="desc">Career stats by player and format</span>
+        <span class="rows">{{stats_rows}} rows</span>
       </a>
     </div>
 
-    <h2>Career stats</h2>
+    <h2>Leaderboards</h2>
     <div class="tables">
-      <a class="card" data-path="/cricket/stats_men">
-        <span class="name">stats_men</span>
-        <span class="desc">Men's career stats by format</span>
-        <span class="rows">6,805 rows</span>
+      <a class="card" data-path="/cricket/most_test_runs">
+        <span class="name">Most Test runs</span>
+        <span class="desc">All-time Test run-scorers, men and women</span>
       </a>
-      <a class="card" data-path="/cricket/stats_women">
-        <span class="name">stats_women</span>
-        <span class="desc">Women's career stats by format</span>
-        <span class="rows">2,608 rows</span>
+      <a class="card" data-path="/cricket/most_odi_runs">
+        <span class="name">Most ODI runs</span>
+        <span class="desc">All-time ODI run-scorers, men and women</span>
+      </a>
+      <a class="card" data-path="/cricket/most_t20i_runs">
+        <span class="name">Most T20I runs</span>
+        <span class="desc">All-time T20I run-scorers, men and women</span>
+      </a>
+      <a class="card" data-path="/cricket/most_test_wickets">
+        <span class="name">Most Test wickets</span>
+        <span class="desc">All-time Test wicket-takers, men and women</span>
+      </a>
+      <a class="card" data-path="/cricket/best_test_batting_average">
+        <span class="name">Best Test batting average</span>
+        <span class="desc">Minimum 20 innings</span>
+      </a>
+      <a class="card" data-path="/cricket/best_test_bowling_average">
+        <span class="name">Best Test bowling average</span>
+        <span class="desc">Minimum 50 wickets</span>
       </a>
     </div>
 
@@ -182,12 +201,17 @@
       <a class="card" data-path="/cricket/countries">
         <span class="name">countries</span>
         <span class="desc">Cricket-playing countries</span>
-        <span class="rows">116 rows</span>
+        <span class="rows">{{countries_rows}} rows</span>
       </a>
       <a class="card" data-path="/cricket/teams">
         <span class="name">teams</span>
-        <span class="desc">International and domestic teams</span>
-        <span class="rows">4,124 rows</span>
+        <span class="desc">International and domestic teams — full-text search on names</span>
+        <span class="rows">{{teams_rows}} rows</span>
+      </a>
+      <a class="card" data-path="/cricket/formats">
+        <span class="name">formats</span>
+        <span class="desc">Formats of the game referenced by stats</span>
+        <span class="rows">{{formats_rows}} rows</span>
       </a>
     </div>
 
