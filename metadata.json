@@ -7,115 +7,293 @@
         "countries": {
           "description": "Cricket-playing countries.",
           "columns": {
-            "name": { "label": "Name" },
-            "shortName": { "label": "Short name" },
-            "abbreviation": { "label": "Abbreviation" },
-            "slug": { "label": "Slug" },
-            "imageUrl": { "label": "Image URL" }
-          }
+            "name": "Name",
+            "shortName": "Short name",
+            "abbreviation": "Abbreviation",
+            "slug": "Slug",
+            "imageUrl": "Image URL"
+          },
+          "label_column": "name"
         },
         "players": {
           "description": "Men's and women's international players. Full-text search available on names.",
-          "facets": ["gender", "countryId", "playingRoles", "battingStyles", "bowlingStyles"],
+          "facets": [
+            "gender",
+            "countryId",
+            "playingRoles",
+            "battingStyles",
+            {
+              "array": "bowlingStyles"
+            },
+            "hasStats"
+          ],
           "columns": {
-            "name": { "label": "Name" },
-            "longName": { "label": "Long name" },
-            "fullName": { "label": "Full name" },
-            "slug": { "label": "Slug" },
-            "gender": { "label": "Gender" },
-            "dateOfBirth": { "label": "Date of birth" },
-            "countryId": { "label": "Country" },
-            "battingStyles": { "label": "Batting style" },
-            "bowlingStyles": { "label": "Bowling style" },
-            "playingRoles": { "label": "Playing role" }
-          }
+            "name": "Name",
+            "longName": "Long name",
+            "fullName": "Full name",
+            "slug": "Slug",
+            "gender": "Gender",
+            "dateOfBirth": "Date of birth",
+            "countryId": "Country",
+            "battingStyles": "Batting style",
+            "bowlingStyles": "Bowling style",
+            "playingRoles": "Playing role",
+            "hasStats": "Has stats"
+          },
+          "label_column": "longName"
         },
         "teams": {
           "description": "International and domestic teams. Full-text search available on names.",
-          "facets": ["isCountry", "countryId"],
+          "facets": [
+            "isCountry",
+            "countryId"
+          ],
           "columns": {
-            "name": { "label": "Name" },
-            "longName": { "label": "Long name" },
-            "abbreviation": { "label": "Abbreviation" },
-            "slug": { "label": "Slug" },
-            "isCountry": { "label": "Is a country" },
-            "countryId": { "label": "Country" },
-            "imageUrl": { "label": "Image URL" }
-          }
+            "name": "Name",
+            "longName": "Long name",
+            "abbreviation": "Abbreviation",
+            "slug": "Slug",
+            "isCountry": "Is a country",
+            "countryId": "Country",
+            "imageUrl": "Image URL"
+          },
+          "label_column": "longName"
         },
         "formats": {
           "description": "Formats of the game (Tests, ODIs, T20Is) referenced by stats.classId.",
           "columns": {
-            "name": { "label": "Name" },
-            "gender": { "label": "Gender" }
-          }
+            "name": "Name",
+            "gender": "Gender"
+          },
+          "label_column": "name"
         },
         "stats": {
           "description": "International career stats by player and format.",
-          "facets": ["format", "gender"],
+          "facets": [
+            "format",
+            "gender"
+          ],
           "sort_desc": "bat_runs",
           "columns": {
-            "playerId": { "label": "Player" },
-            "longName": { "label": "Player" },
-            "classId": { "label": "Format" },
-            "format": { "label": "Format" },
-            "gender": { "label": "Gender" },
-            "bat_matches": { "label": "Matches" },
-            "bat_innings": { "label": "Innings" },
-            "bat_notOuts": { "label": "Not outs" },
-            "bat_runs": { "label": "Runs" },
-            "bat_highScore": { "label": "High score" },
-            "bat_average": { "label": "Average" },
-            "bat_balls": { "label": "Balls faced" },
-            "bat_strikeRate": { "label": "Strike rate" },
-            "bat_hundreds": { "label": "100s" },
-            "bat_fifties": { "label": "50s" },
-            "bat_fours": { "label": "Fours" },
-            "bat_sixes": { "label": "Sixes" },
-            "bat_catches": { "label": "Catches" },
-            "bat_stumpings": { "label": "Stumpings" },
-            "bowl_matches": { "label": "Matches" },
-            "bowl_innings": { "label": "Innings" },
-            "bowl_balls": { "label": "Balls bowled" },
-            "bowl_runsConceded": { "label": "Runs conceded" },
-            "bowl_wickets": { "label": "Wickets" },
-            "bowl_bestInnings": { "label": "Best innings" },
-            "bowl_bestMatch": { "label": "Best match" },
-            "bowl_average": { "label": "Average" },
-            "bowl_economy": { "label": "Economy" },
-            "bowl_strikeRate": { "label": "Strike rate" },
-            "bowl_fourWickets": { "label": "4-wicket hauls" },
-            "bowl_fiveWickets": { "label": "5-wicket hauls" },
-            "bowl_tenWickets": { "label": "10-wicket hauls" }
+            "playerId": "Player",
+            "longName": "Player",
+            "classId": "Format",
+            "format": "Format",
+            "gender": "Gender",
+            "bat_matches": "Matches",
+            "bat_innings": "Innings",
+            "bat_notOuts": "Not outs",
+            "bat_runs": "Runs",
+            "bat_highScore": "High score",
+            "bat_average": "Average",
+            "bat_balls": "Balls faced",
+            "bat_strikeRate": "Strike rate",
+            "bat_hundreds": "100s",
+            "bat_fifties": "50s",
+            "bat_fours": "Fours",
+            "bat_sixes": "Sixes",
+            "bat_catches": "Catches",
+            "bat_stumpings": "Stumpings",
+            "bowl_matches": "Matches",
+            "bowl_innings": "Innings",
+            "bowl_balls": "Balls bowled",
+            "bowl_runsConceded": "Runs conceded",
+            "bowl_wickets": "Wickets",
+            "bowl_bestInnings": "Best innings",
+            "bowl_bestMatch": "Best match",
+            "bowl_average": "Average",
+            "bowl_economy": "Economy",
+            "bowl_strikeRate": "Strike rate",
+            "bowl_fourWickets": "4-wicket hauls",
+            "bowl_fiveWickets": "5-wicket hauls",
+            "bowl_tenWickets": "10-wicket hauls",
+            "bat_highScoreRuns": "High score (runs)",
+            "bat_highScoreNotOut": "High score not out",
+            "bowl_bestInningsWickets": "Best innings wickets",
+            "bowl_bestInningsRuns": "Best innings runs",
+            "bowl_bestMatchWickets": "Best match wickets",
+            "bowl_bestMatchRuns": "Best match runs"
+          }
+        },
+        "styles": {
+          "description": "ESPNcricinfo batting and bowling style codes and their labels. players stores the labels.",
+          "columns": {
+            "code": "Code",
+            "kind": "Kind",
+            "name": "Name"
+          }
+        },
+        "player_stats": {
+          "description": "Career stats by player and format, joined with the player's country, styles and role. Search matches player names.",
+          "fts_table": "players_fts",
+          "fts_pk": "playerId",
+          "facets": [
+            "format",
+            "gender",
+            "country",
+            "playingRoles",
+            "battingStyles",
+            {
+              "array": "bowlingStyles"
+            }
+          ],
+          "sort_desc": "bat_runs",
+          "columns": {
+            "playerId": "Player",
+            "longName": "Player",
+            "classId": "Format",
+            "format": "Format",
+            "gender": "Gender",
+            "bat_matches": "Matches",
+            "bat_innings": "Innings",
+            "bat_notOuts": "Not outs",
+            "bat_runs": "Runs",
+            "bat_highScore": "High score",
+            "bat_average": "Average",
+            "bat_balls": "Balls faced",
+            "bat_strikeRate": "Strike rate",
+            "bat_hundreds": "100s",
+            "bat_fifties": "50s",
+            "bat_fours": "Fours",
+            "bat_sixes": "Sixes",
+            "bat_catches": "Catches",
+            "bat_stumpings": "Stumpings",
+            "bowl_matches": "Matches",
+            "bowl_innings": "Innings",
+            "bowl_balls": "Balls bowled",
+            "bowl_runsConceded": "Runs conceded",
+            "bowl_wickets": "Wickets",
+            "bowl_bestInnings": "Best innings",
+            "bowl_bestMatch": "Best match",
+            "bowl_average": "Average",
+            "bowl_economy": "Economy",
+            "bowl_strikeRate": "Strike rate",
+            "bowl_fourWickets": "4-wicket hauls",
+            "bowl_fiveWickets": "5-wicket hauls",
+            "bowl_tenWickets": "10-wicket hauls",
+            "bat_highScoreRuns": "High score (runs)",
+            "bat_highScoreNotOut": "High score not out",
+            "bowl_bestInningsWickets": "Best innings wickets",
+            "bowl_bestInningsRuns": "Best innings runs",
+            "bowl_bestMatchWickets": "Best match wickets",
+            "bowl_bestMatchRuns": "Best match runs",
+            "country": "Country",
+            "dateOfBirth": "Date of birth",
+            "battingStyles": "Batting style",
+            "bowlingStyles": "Bowling style",
+            "playingRoles": "Playing role"
+          }
+        },
+        "career_totals": {
+          "description": "Each player's international career summed across Tests, ODIs and T20Is. Search matches player names.",
+          "fts_table": "players_fts",
+          "fts_pk": "playerId",
+          "facets": [
+            "gender",
+            "country"
+          ],
+          "sort_desc": "runs",
+          "columns": {
+            "longName": "Player",
+            "gender": "Gender",
+            "country": "Country",
+            "formats": "Formats",
+            "matches": "Matches",
+            "innings": "Innings",
+            "runs": "Runs",
+            "battingAverage": "Batting average",
+            "highScore": "High score",
+            "hundreds": "100s",
+            "fifties": "50s",
+            "catches": "Catches",
+            "stumpings": "Stumpings",
+            "wickets": "Wickets",
+            "bowlingAverage": "Bowling average",
+            "fiveWicketHauls": "5-wicket hauls"
           }
         }
       },
       "queries": {
-        "most_test_runs": {
-          "title": "Most Test runs",
-          "sql": "select longName, gender, bat_matches, bat_innings, bat_runs, bat_average, bat_hundreds from stats where format = 'Tests' order by bat_runs desc limit 100"
+        "most_runs": {
+          "title": "Most runs",
+          "description": "format: Tests, ODIs or T20Is. gender: M or F. country: e.g. India. Leave any blank for all.",
+          "sql": "select longName, country, format, gender, bat_matches, bat_innings, bat_runs, bat_average, bat_hundreds, bat_fifties from player_stats where (:format = '' or format = :format) and (:gender = '' or gender = :gender) and (:country = '' or country = :country) order by bat_runs desc limit 100"
         },
-        "most_odi_runs": {
-          "title": "Most ODI runs",
-          "sql": "select longName, gender, bat_matches, bat_innings, bat_runs, bat_average, bat_hundreds from stats where format = 'ODIs' order by bat_runs desc limit 100"
+        "most_wickets": {
+          "title": "Most wickets",
+          "description": "format: Tests, ODIs or T20Is. gender: M or F. country: e.g. India. Leave any blank for all.",
+          "sql": "select longName, country, format, gender, bowl_matches, bowl_wickets, bowl_average, bowl_economy, bowl_fiveWickets from player_stats where (:format = '' or format = :format) and (:gender = '' or gender = :gender) and (:country = '' or country = :country) order by bowl_wickets desc limit 100"
         },
-        "most_t20i_runs": {
-          "title": "Most T20I runs",
-          "sql": "select longName, gender, bat_matches, bat_innings, bat_runs, bat_average, bat_strikeRate from stats where format = 'T20Is' order by bat_runs desc limit 100"
+        "highest_scores": {
+          "title": "Highest individual scores",
+          "description": "format: Tests, ODIs or T20Is. gender: M or F. country: e.g. India. Leave any blank for all.",
+          "sql": "select longName, country, format, gender, bat_highScore, bat_matches, bat_runs from player_stats where (:format = '' or format = :format) and (:gender = '' or gender = :gender) and (:country = '' or country = :country) and bat_highScoreRuns is not null order by bat_highScoreRuns desc, bat_highScoreNotOut desc limit 100"
         },
-        "most_test_wickets": {
-          "title": "Most Test wickets",
-          "sql": "select longName, gender, bowl_matches, bowl_wickets, bowl_average, bowl_economy, bowl_fiveWickets from stats where format = 'Tests' order by bowl_wickets desc limit 100"
+        "best_bowling_figures": {
+          "title": "Best bowling figures in an innings",
+          "description": "format: Tests, ODIs or T20Is. gender: M or F. country: e.g. India. Leave any blank for all.",
+          "sql": "select longName, country, format, gender, bowl_bestInnings, bowl_bestMatch, bowl_wickets from player_stats where (:format = '' or format = :format) and (:gender = '' or gender = :gender) and (:country = '' or country = :country) and bowl_bestInningsWickets is not null order by bowl_bestInningsWickets desc, bowl_bestInningsRuns asc limit 100"
         },
-        "best_test_batting_average": {
-          "title": "Best Test batting average (min 20 innings)",
-          "sql": "select longName, gender, bat_innings, bat_runs, bat_average, bat_hundreds from stats where format = 'Tests' and bat_innings >= 20 order by bat_average desc limit 100"
+        "best_batting_average": {
+          "title": "Best batting average",
+          "description": "format: Tests, ODIs or T20Is. gender: M or F. country: e.g. India. Leave any blank for all. min_innings: e.g. 20.",
+          "sql": "select longName, country, format, gender, bat_innings, bat_runs, bat_average, bat_hundreds from player_stats where (:format = '' or format = :format) and (:gender = '' or gender = :gender) and (:country = '' or country = :country) and bat_innings >= cast(:min_innings as integer) order by bat_average desc limit 100"
         },
-        "best_test_bowling_average": {
-          "title": "Best Test bowling average (min 50 wickets)",
-          "sql": "select longName, gender, bowl_matches, bowl_wickets, bowl_average, bowl_economy from stats where format = 'Tests' and bowl_wickets >= 50 order by bowl_average asc limit 100"
+        "best_bowling_average": {
+          "title": "Best bowling average",
+          "description": "format: Tests, ODIs or T20Is. gender: M or F. country: e.g. India. Leave any blank for all. min_wickets: e.g. 50.",
+          "sql": "select longName, country, format, gender, bowl_matches, bowl_wickets, bowl_average, bowl_economy from player_stats where (:format = '' or format = :format) and (:gender = '' or gender = :gender) and (:country = '' or country = :country) and bowl_wickets >= cast(:min_wickets as integer) order by bowl_average asc limit 100"
+        },
+        "best_strike_rate": {
+          "title": "Best batting strike rate",
+          "description": "format: Tests, ODIs or T20Is. gender: M or F. country: e.g. India. Leave any blank for all. min_balls: e.g. 500. Older Tests lack balls faced.",
+          "sql": "select longName, country, format, gender, bat_innings, bat_balls, bat_runs, bat_strikeRate, bat_sixes from player_stats where (:format = '' or format = :format) and (:gender = '' or gender = :gender) and (:country = '' or country = :country) and bat_balls >= cast(:min_balls as integer) order by bat_strikeRate desc limit 100"
+        },
+        "most_five_wicket_hauls": {
+          "title": "Most 5-wicket hauls",
+          "description": "format: Tests, ODIs or T20Is. gender: M or F. country: e.g. India. Leave any blank for all.",
+          "sql": "select longName, country, format, gender, bowl_matches, bowl_wickets, bowl_fiveWickets, bowl_tenWickets, bowl_bestInnings from player_stats where (:format = '' or format = :format) and (:gender = '' or gender = :gender) and (:country = '' or country = :country) and bowl_fiveWickets > 0 order by bowl_fiveWickets desc, bowl_wickets desc limit 100"
+        },
+        "allrounders": {
+          "title": "All-rounders",
+          "description": "format: Tests, ODIs or T20Is. gender: M or F. country: e.g. India. Leave any blank for all. min_runs and min_wickets: e.g. 1000 and 50. Sorted by batting minus bowling average.",
+          "sql": "select longName, country, format, gender, bat_matches, bat_runs, bat_average, bowl_wickets, bowl_average, round(bat_average - bowl_average, 2) as averageDifference from player_stats where (:format = '' or format = :format) and (:gender = '' or gender = :gender) and (:country = '' or country = :country) and bat_runs >= cast(:min_runs as integer) and bowl_wickets >= cast(:min_wickets as integer) order by averageDifference desc limit 100"
+        },
+        "player_profile": {
+          "title": "Player profile",
+          "description": "name: any part of the player's name, e.g. Kohli.",
+          "sql": "select longName, country, format, bat_matches, bat_runs, bat_average, bat_highScore, bat_hundreds, bat_fifties, bat_strikeRate, bowl_wickets, bowl_average, bowl_economy, bowl_bestInnings, bat_catches, bat_stumpings from player_stats where longName like '%' || :name || '%' order by longName, classId limit 100"
+        },
+        "compare_players": {
+          "title": "Compare two players",
+          "description": "player_a and player_b: any part of each name, e.g. Tendulkar and Ponting. format: Tests, ODIs, T20Is or blank.",
+          "sql": "select longName, country, format, bat_matches, bat_runs, bat_average, bat_strikeRate, bat_hundreds, bowl_wickets, bowl_average, bowl_economy from player_stats where (longName like '%' || :player_a || '%' or longName like '%' || :player_b || '%') and (:format = '' or format = :format) order by format, longName limit 100"
+        },
+        "youngest_players": {
+          "title": "Youngest players",
+          "description": "gender: M or F. country: e.g. India. Leave blank for all.",
+          "sql": "select p.longName, c.name as country, p.gender, p.dateOfBirth, p.playingRoles from players p left join countries c on c.id = p.countryId where p.hasStats and p.dateOfBirth is not null and (:gender = '' or p.gender = :gender) and (:country = '' or c.name = :country) order by p.dateOfBirth desc limit 100"
+        },
+        "oldest_players": {
+          "title": "Oldest players",
+          "description": "gender: M or F. country: e.g. India. Leave blank for all.",
+          "sql": "select p.longName, c.name as country, p.gender, p.dateOfBirth, p.playingRoles from players p left join countries c on c.id = p.countryId where p.hasStats and p.dateOfBirth is not null and (:gender = '' or p.gender = :gender) and (:country = '' or c.name = :country) order by p.dateOfBirth asc limit 100"
+        },
+        "batting_hand_split": {
+          "title": "Left-handers vs right-handers",
+          "description": "format: Tests, ODIs or T20Is. gender: M or F. country: e.g. India. Leave any blank for all. min_innings: e.g. 20.",
+          "sql": "select battingStyles, count(*) as players, sum(bat_runs) as runs, sum(bat_hundreds) as hundreds, round(1.0 * sum(bat_runs) / nullif(sum(bat_innings) - sum(bat_notOuts), 0), 2) as average, round(100.0 * sum(bat_runs) / nullif(sum(bat_balls), 0), 2) as strikeRate from player_stats where (:format = '' or format = :format) and (:gender = '' or gender = :gender) and (:country = '' or country = :country) and battingStyles is not null and bat_innings >= cast(:min_innings as integer) group by battingStyles order by average desc"
+        },
+        "country_summary": {
+          "title": "Country summary",
+          "description": "format: Tests, ODIs or T20Is. gender: M or F. Leave blank for all.",
+          "sql": "select country, count(distinct playerId) as players, sum(bat_runs) as runs, sum(bat_hundreds) as hundreds, sum(bowl_wickets) as wickets, sum(bowl_fiveWickets) as fiveWicketHauls from player_stats where country is not null and (:format = '' or format = :format) and (:gender = '' or gender = :gender) group by country order by runs desc"
         }
       }
     }
-  }
+  },
+  "source": "ESPNcricinfo",
+  "source_url": "https://www.espncricinfo.com/",
+  "about": "rushi/cricket-data on GitHub",
+  "about_url": "https://github.com/rushi/cricket-data"
 }
