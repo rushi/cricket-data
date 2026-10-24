@@ -7,8 +7,20 @@
         "countries": {
           "description": "Cricket-playing countries."
         },
-        "players": {
+        "players_men": {
+          "description": "Men's international players."
+        },
+        "players_women": {
           "description": "Women's international players."
+        },
+        "teams": {
+          "description": "International and domestic teams."
+        },
+        "stats_men": {
+          "description": "Men's international career stats by format."
+        },
+        "stats_women": {
+          "description": "Women's international career stats by format."
         }
       }
     }

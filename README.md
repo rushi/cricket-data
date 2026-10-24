@@ -2,16 +2,20 @@
 
 Cricket data published as a SQLite database on GitHub Pages, explorable in
 the browser with a self-hosted, custom-themed copy of
-[Datasette Lite](https://github.com/simonw/datasette-lite).
+[Datasette Lite](https://github.com/simonw/datasette-lite). It is a tool for exploring and publishing data. It helps people take data of any shape, analyze and explore it,
 
 ## Data
 
 Source CSVs live in `data/`. Currently loaded into `cricket.db`:
 
-| Table       | Source                                 | Rows  |
-| ----------- | -------------------------------------- | ----- |
-| `countries` | `data/countries.csv`                   | 116   |
-| `players`   | `data/players-women-international.csv` | 1,502 |
+| Table           | Source                                 | Rows  |
+| --------------- | -------------------------------------- | ----- |
+| `countries`     | `data/countries.csv`                   | 116   |
+| `players_men`   | `data/players-men-international.csv`   | 4,758 |
+| `players_women` | `data/players-women-international.csv` | 1,502 |
+| `teams`         | `data/teams.csv`                       | 4,124 |
+| `stats_men`     | `data/stats-men-international.csv`     | 6,805 |
+| `stats_women`   | `data/stats-women-international.csv`   | 2,608 |
 
 ## Building locally
 
