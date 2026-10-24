@@ -1,0 +1,141 @@
+/* Cricket data — modern data-tool theme for Datasette Lite.
+   Loaded after Datasette Lite's app.css, so these rules win on equal specificity. */
+
+:root {
+  --accent: #4f46e5;
+  --accent-dark: #4338ca;
+  --accent-soft: #eef2ff;
+  --ink: #111827;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --bg-subtle: #f9fafb;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--ink);
+}
+
+a:link, a:visited {
+  color: var(--accent);
+}
+a:hover, a:active {
+  color: var(--accent-dark);
+}
+
+/* Header / footer bar (Datasette ships a blue gradient here) */
+header,
+footer.ft,
+footer {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  color: var(--ink);
+}
+footer.ft,
+footer {
+  border-bottom: none;
+  border-top: 1px solid var(--border);
+}
+header .crumbs a:link,
+header .crumbs a:visited {
+  color: var(--muted);
+}
+header .crumbs a:hover {
+  color: var(--accent);
+}
+footer.ft a,
+footer a {
+  color: var(--accent);
+}
+#load-custom a {
+  color: var(--muted) !important;
+}
+
+/* Page header — Datasette sets an inline border-color per database */
+.page-header {
+  border-left: none !important;
+  padding-left: 0;
+  background: transparent;
+  border-bottom: none;
+}
+.page-header h1 a:link,
+.page-header h1 a:visited {
+  color: var(--ink);
+}
+.page-header h1 a:hover {
+  color: var(--accent);
+}
+
+/* Data tables */
+table.rows-and-columns,
+table {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+th {
+  background: var(--bg-subtle);
+  border-bottom: 2px solid var(--border);
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+td {
+  border-bottom: 1px solid var(--border);
+  font-variant-numeric: tabular-nums;
+}
+tbody tr:hover td {
+  background: var(--accent-soft);
+}
+td.type-integer,
+td.type-float,
+td.type-real {
+  font-family: var(--mono);
+  font-size: 0.92em;
+}
+
+/* Facets, filters and secondary text */
+.facet-info,
+.meta,
+.metadata-description,
+footer {
+  color: var(--muted);
+}
+
+/* Buttons and inputs */
+form input[type=submit],
+form button[type=button],
+button {
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  color: #fff;
+}
+form input[type=submit]:hover,
+form button[type=button]:hover,
+button:hover {
+  background: var(--accent-dark);
+}
+input[type=search]:focus,
+input[type=text]:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--accent);
+  outline: 2px solid var(--accent-soft);
+}
+
+/* SQL query display */
+pre#sql-query,
+pre {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: var(--mono);
+}
+
+/* Loading indicator in Datasette Lite (colors defined inline in its index.html) */
+#loading-indicator textarea {
+  background: var(--ink) !important;
+  border-radius: 8px;
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cricket data</title>
+  <style>
+    :root {
+      --accent: #4f46e5;
+      --accent-dark: #4338ca;
+      --accent-soft: #eef2ff;
+      --ink: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --bg-subtle: #f9fafb;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: #fff;
+      margin: 0;
+      line-height: 1.5;
+    }
+    .wrap {
+      max-width: 44rem;
+      margin: 0 auto;
+      padding: 4rem 1.25rem;
+    }
+    h1 {
+      font-size: 2.25rem;
+      line-height: 1.15;
+      margin: 0 0 0.75rem;
+      letter-spacing: -0.02em;
+    }
+    .lede {
+      color: var(--muted);
+      font-size: 1.1rem;
+      margin: 0 0 2.5rem;
+    }
+    .stats {
+      display: flex;
+      gap: 2rem;
+      padding: 1rem 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2.5rem;
+    }
+    .stat .num {
+      font-family: var(--mono);
+      font-size: 1.4rem;
+      font-weight: 600;
+      font-variant-numeric: tabular-nums;
+    }
+    .stat .label {
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    h2 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin: 0 0 0.75rem;
+    }
+    .tables {
+      display: grid;
+      gap: 0.75rem;
+      margin-bottom: 2.5rem;
+    }
+    .card {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      padding: 1rem 1.25rem;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      text-decoration: none;
+      color: var(--ink);
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .card:hover {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+    }
+    .card .name {
+      font-weight: 600;
+    }
+    .card .desc {
+      color: var(--muted);
+      font-size: 0.9rem;
+      flex: 1;
+    }
+    .card .rows {
+      font-family: var(--mono);
+      font-size: 0.85rem;
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+    .actions {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1.1rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+    .btn-primary:hover { background: var(--accent-dark); }
+    .btn-secondary {
+      border: 1px solid var(--border);
+      color: var(--ink);
+    }
+    .btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
+    footer {
+      margin-top: 4rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Cricket data</h1>
+      <p class="lede">A SQLite database of cricket data, explorable in your browser —
+        no server, no install. Powered by
+        <a href="https://lite.datasette.io/">Datasette Lite</a>.</p>
+    </header>
+
+    <div class="stats">
+      <div class="stat"><div class="num">2</div><div class="label">tables</div></div>
+      <div class="stat"><div class="num">1,618</div><div class="label">rows</div></div>
+      <div class="stat"><div class="num" id="db-size">156 KB</div><div class="label">SQLite database</div></div>
+    </div>
+
+    <h2>Tables</h2>
+    <div class="tables">
+      <a class="card" data-path="/cricket/countries">
+        <span class="name">countries</span>
+        <span class="desc">Cricket-playing countries</span>
+        <span class="rows">116 rows</span>
+      </a>
+      <a class="card" data-path="/cricket/players">
+        <span class="name">players</span>
+        <span class="desc">Women's international players</span>
+        <span class="rows">1,502 rows</span>
+      </a>
+    </div>
+
+    <div class="actions">
+      <a class="btn btn-primary" data-path="/cricket">Browse the database</a>
+      <a class="btn btn-secondary" href="cricket.db" download>Download cricket.db</a>
+    </div>
+
+    <footer>
+      Source CSVs and build pipeline on
+      <a href="https://github.com/rushi/cricket-data">GitHub</a>.
+      Runs entirely in your browser via WebAssembly.
+    </footer>
+  </div>
+
+  <script>
+    // Point every Datasette Lite link at this site's own db + metadata,
+    // resolved against the current URL so it works on any Pages domain.
+    const dbUrl = new URL("cricket.db", location.href).href;
+    const metadataUrl = new URL("metadata.json", location.href).href;
+    const liteBase = "lite/?url=" + encodeURIComponent(dbUrl) +
+                     "&metadata=" + encodeURIComponent(metadataUrl);
+    for (const a of document.querySelectorAll("a[data-path]")) {
+      a.href = liteBase + "#" + a.dataset.path;
+    }
+  </script>
+</body>
+</html>
