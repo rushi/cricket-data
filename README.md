@@ -71,8 +71,9 @@ install the `datasette-pretty-json` plugin through Datasette Lite's
 
 ## Deployment
 
-Pushing to `main` runs `.github/workflows/deploy.yml`, which runs
-`npm run site` and publishes `_site/` to GitHub Pages.
+`.github/workflows/deploy.yml` runs `npm run site` and publishes `_site/`
+to GitHub Pages. It runs only when triggered by hand, from the repo's
+**Actions** tab or with `gh workflow run deploy.yml`.
 
 One-time setup: in the repo's **Settings → Pages**, set **Source** to
 **GitHub Actions**.
@@ -80,6 +81,6 @@ One-time setup: in the repo's **Settings → Pages**, set **Source** to
 ## Adding more CSVs
 
 Add an `insertCsv` call to `load()` in `build.mjs`, add the table's entry
-to `metadata.json` and a card in `index.html`, and push. Row counts and
+to `metadata.json` and a card in `index.html`, push, then run the deploy. Row counts and
 the db size on the landing page are generated from the db by `site.mjs`
 (via `{{tokens}}` in `index.html`); add new tables to `COUNTED_TABLES`.
