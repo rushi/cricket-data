@@ -5,7 +5,7 @@ id,name,longName,abbreviation,slug,isCountry,countryId,imageUrl
 4,West Indies,West Indies,WI,west-indies,true,4,/lsci/db/PICTURES/CMS/317600/317615.png
 5,New Zealand,New Zealand,NZ,new-zealand,true,5,/lsci/db/PICTURES/CMS/340500/340505.png
 6,India,India,IND,india,true,6,/lsci/db/PICTURES/CMS/381800/381895.png
-7,Pakistan,Pakistan,PAK,pakistan,true,7,/lsci/db/PICTURES/CMS/381800/381891.png
+7,Pakistan,Pakistan,PAK,pakistan,true,7,/lsci/db/PICTURES/CMS/419200/419214.png
 8,Ceylon,Ceylon,Ceyl,sri-lanka,true,8,/lsci/db/PICTURES/CMS/340000/340047.png
 9,Rhodesia,Rhodesia,Rhod,zimbabwe,true,9,/lsci/db/PICTURES/CMS/340500/340503.png
 10,Fiji,Fiji,Fiji,fiji,true,10,/lsci/db/PICTURES/CMS/386300/386356.png
@@ -371,7 +371,7 @@ id,name,longName,abbreviation,slug,isCountry,countryId,imageUrl
 673,Bdesh U-23s,Bangladesh Under-23s,BD23,bangladesh-under-23s,false,25,/lsci/db/PICTURES/CMS/155100/155124.png
 675,Biman,Biman Bangladesh,Biman,biman-bangladesh,false,25,
 677,Brothers,Brothers Union,BU,brothers-union,false,25,/lsci/db/PICTURES/CMS/398100/398165.jpg
-679,Chittagong,Chittagong Division,CHA,chattogram-division,false,25,/lsci/db/PICTURES/CMS/313200/313245.logo.png
+679,Chattogram,Chattogram Division,CHATT,chattogram-division,false,25,/lsci/db/PICTURES/CMS/313200/313245.logo.png
 681,City Club,City Club,CITY,city-club,false,25,/lsci/db/PICTURES/CMS/336000/336020.png
 682,Dhaka DIV,Dhaka Division,DHA,dhaka-division-and-dacca,false,25,/lsci/db/PICTURES/CMS/313200/313246.logo.png
 683,Dhaka Metro,Dhaka Metropolis,DHA-M,mymensingh-division,false,25,/lsci/db/PICTURES/CMS/328700/328749.jpg
@@ -514,7 +514,7 @@ id,name,longName,abbreviation,slug,isCountry,countryId,imageUrl
 950,Enfield,Enfield,,enfield,false,1,
 952,Eng Lions,England Lions,LIONS,england-lions-england-a,false,1,/lsci/db/PICTURES/CMS/313200/313257.logo.png
 953,,England Amateurs,,england-amateurs,false,1,
-954,ENG-A Women,England A Women,ENA-W,england-a-women,false,1,/lsci/db/PICTURES/CMS/313100/313114.logo.png
+954,ENG-A Women,England A Women,ENA-W,england-a-women,false,1,/lsci/db/PICTURES/CMS/419200/419236.png
 956,,England Blind,,england-blind,false,1,/lsci/db/PICTURES/CMS/155100/155127.png
 962,Eng NCA XI,England National Cricket Association XI,,ecb-national-academy,false,1,
 967,Eng U-15s,England Under-15s,,england-under-15s,false,1,/lsci/db/PICTURES/CMS/155100/155127.png
@@ -523,7 +523,7 @@ id,name,longName,abbreviation,slug,isCountry,countryId,imageUrl
 971,ENG Under-19,England Under-19s,ENG19,england-under-19s-young-cricketers,false,1,/lsci/db/PICTURES/CMS/381800/381894.png
 972,Eng U19 Wmn,England Under-19s Women,EU19W,england-under-19s-women,false,1,/lsci/db/PICTURES/CMS/313100/313114.logo.png
 973,,England Under-23 Women,,england-under-23s-women,false,1,/lsci/db/PICTURES/CMS/155100/155127.png
-975,ENG Women,England Women,ENG-W,england-women,false,1,/lsci/db/PICTURES/CMS/313200/313261.logo.png
+975,ENG Women,England Women,ENG-W,england-women,false,1,/lsci/db/PICTURES/CMS/419200/419236.png
 980,Epsom,Epsom,Epsom,epsom,false,1,
 984,Essex,Essex,ESS,essex,false,1,/lsci/db/PICTURES/CMS/313200/313263.logo.png
 985,Essex 2nd XI,Essex 2nd XI,ES2XI,essex-2nd-xi,false,1,/lsci/db/PICTURES/CMS/163800/163857.jpg
@@ -1387,11 +1387,11 @@ id,name,longName,abbreviation,slug,isCountry,countryId,imageUrl
 2938,Pakistan A,Pakistan A,PAK-A,pakistan-shaheens,false,7,/lsci/db/PICTURES/CMS/381800/381891.png
 2939,PAK Acad,Pakistan Cricket Academy,PkAcd,pakistan-cricket-academy,false,7,
 2941,Pakistan B,Pakistan B,,pakistan-b,false,7,
-2944,,Pakistan Blues,,pakistan-blues,false,7,
+2944,Pak Blues,Pakistan Blues,PAK-B,pakistan-blues,false,7,/lsci/db/PICTURES/CMS/421000/421013.png
 2945,,Pakistan Board XI,,pakistan-board-xi,false,7,
 2947,,Pakistan Combined Schools,,pakistan-combined-schools,false,7,
 2949,,Pakistan Eaglets,,pakistan-eaglets,false,7,
-2951,,Pakistan Greens,,pakistan-greens,false,7,
+2951,Pak Greens,Pakistan Greens,PAK-G,pakistan-greens,false,7,/lsci/db/PICTURES/CMS/421000/421021.png
 2954,Pak Masters,Pakistan Masters,,pakistan-masters,false,7,
 2955,,Pakistan Navy,,pakistan-navy,false,7,
 2958,,Pakistan Reserves,,pakistan-reserves,false,7,
@@ -1400,7 +1400,7 @@ id,name,longName,abbreviation,slug,isCountry,countryId,imageUrl
 2961,Pak U-15s,Pakistan Under-15s,,pakistan-under-15s,false,7,/lsci/db/PICTURES/CMS/154300/154385.png
 2962,Pakistan U16,Pakistan Under-16s,Pak16,pakistan-under-16s,false,7,/lsci/db/PICTURES/CMS/154300/154385.png
 2963,,Pakistan Under-17s,,pakistan-under-17s,false,7,/lsci/db/PICTURES/CMS/154300/154385.png
-2964,PAK Under-19,Pakistan Under-19s,PAK19,pakistan-under-19s-young-cricketers,false,7,/lsci/db/PICTURES/CMS/313300/313340.logo.png
+2964,PAK Under-19,Pakistan Under-19s,PAK19,pakistan-under-19s-young-cricketers,false,7,/lsci/db/PICTURES/CMS/419200/419214.png
 2965,Pak U-23s,Pakistan Under-23s,PAK23,pakistan-under-23s,false,7,/lsci/db/PICTURES/CMS/154300/154385.png
 2967,Pak Univ,Pakistan Universities,PakUn,pakistan-universities,false,7,
 2971,PAK Women,Pakistan Women,PAK-W,pakistan-women,false,7,/lsci/db/PICTURES/CMS/381800/381891.png
@@ -1494,7 +1494,7 @@ id,name,longName,abbreviation,slug,isCountry,countryId,imageUrl
 3195,,Combined Western Province-Boland XI,,combined-western-province-boland-xi,false,3,
 3199,Dolphins,Dolphins,DOLPH,dolphins,false,3,/lsci/db/PICTURES/CMS/327700/327719.png
 3202,Eagles,Eagles,Eagls,knights,false,3,/lsci/db/PICTURES/CMS/327700/327700.png
-3203,,Eastern Transvaal,EASTN,easterns-eastern-transvaal,false,3,/lsci/db/PICTURES/CMS/327700/327716.png
+3203,Easterns,Easterns,EASTN,easterns-eastern-transvaal,false,3,/lsci/db/PICTURES/CMS/327700/327716.png
 3204,Eastns U19s,Easterns Under-19s,Eas19,easterns-under-19s,false,3,
 3208,E. Province,Eastern Province,EPR,eastern-province,false,3,/lsci/db/PICTURES/CMS/317300/317327.png
 3209,,Eastern Province Academy XI,,eastern-province-academy-xi,false,3,
@@ -1509,7 +1509,7 @@ id,name,longName,abbreviation,slug,isCountry,countryId,imageUrl
 3224,F.State U19,Free State Under-19s,FS19,free-state-under-19s,false,3,
 3225,Univ of FS,University of Free State,UNVFS,university-of-free-state,false,3,
 3226,FS Women,Free State Women,FsWm,free-state-women,false,3,/lsci/db/PICTURES/CMS/317300/317315.png
-3228,Griq West,Griqualand West,GriqW,northern-cape,false,3,/lsci/db/PICTURES/CMS/327700/327710.png
+3228,Northern Cpe,Northern Cape,NCAPE,northern-cape,false,3,/lsci/db/PICTURES/CMS/327700/327710.png
 3230,GriqW U19,Griqualand West Under-19s,GqW19,northern-cape-under-19s,false,3,
 3231,Transvaal,Transvaal,Tvl,gauteng-transvaal,false,3,/lsci/db/PICTURES/CMS/317300/317323.png
 3233,Gauteng B,Gauteng B,,gauteng-b-transvaal-b,false,3,
@@ -1579,7 +1579,7 @@ id,name,longName,abbreviation,slug,isCountry,countryId,imageUrl
 3359,,Western Province B,,western-province-b,false,3,
 3360,Cape Cobras,Cape Cobras,COBRA,cape-cobras,false,3,/lsci/db/PICTURES/CMS/313300/313352.logo.png
 3366,W.Prov U19,Western Province Under-19s,WP19,western-province-under-19s,false,3,
-3367,WPR Women,Western Province Women,WPR-W,western-province-women,false,3,/lsci/db/PICTURES/CMS/378300/378387.png
+3367,WPR Women,Western Province Women,WPR-W,western-province-women,false,3,/lsci/db/PICTURES/CMS/422500/422525.png
 3369,WPR XI,Western Province XI,,western-province-xi,false,3,
 3375,,Aberdeenshire,,aberdeenshire,false,30,
 3377,Arbroath,Arbroath,,arbroath,false,30,
@@ -1713,7 +1713,7 @@ id,name,longName,abbreviation,slug,isCountry,countryId,imageUrl
 3624,SL Young Wmn,Sri Lanka Young Women,SL Yo,sri-lanka-young-women,false,8,
 3626,S. Province,Southern Province,,southern-province,false,8,
 3627,,Southern Province XI,,southern-province-xi,false,8,
-3629,Seeduwa,Seeduwa Raddoluwa Cricket Club,Seedu,ace-capital-cricket-club,false,8,/lsci/db/PICTURES/CMS/318200/318245.png
+3629,Ace Capital,Ace Capital Cricket Club,ACCC,ace-capital-cricket-club,false,8,/lsci/db/PICTURES/CMS/318200/318245.png
 3630,Sinhalese,Sinhalese Sports Club,SSC,sinhalese-sports-club,false,8,/lsci/db/PICTURES/CMS/318200/318243.jpg
 3631,,State Services,,state-services,false,8,
 3632,St. Thomas,St. Thomas College,STC,s-thomas-college,false,8,
@@ -1803,7 +1803,7 @@ id,name,longName,abbreviation,slug,isCountry,countryId,imageUrl
 3787,St Vincent W,St Vincent and the Grenadines Women,STWmn,st-vincent-and-the-grenadines-women,false,4,
 3788,,EW Swanton's XI,,ew-swanton-s-xi,false,1,
 3789,,Southern Windward Islands,,southern-windwards,false,4,
-3790,Trinidad & T,Trinidad & Tobago,T&T,trinidad-tobago,false,4,/lsci/db/PICTURES/CMS/334100/334173.png
+3790,Trinidad,Trinidad,Trini,trinidad-tobago,false,4,/lsci/db/PICTURES/CMS/334100/334173.png
 3791,T&T U19,Trinidad & Tobago Under-19s,T&T19,trinidad-tobago-under-19s,false,4,
 3792,T & T Women,Trinidad & Tobago Women,TTWmn,trinidad-tobago-women,false,4,/lsci/db/PICTURES/CMS/360600/360613.png
 3794,Tobago,Tobago,,tobago,false,4,
@@ -2033,6 +2033,7 @@ id,name,longName,abbreviation,slug,isCountry,countryId,imageUrl
 273502,KZN Inv XI,KwaZulu-Natal Invitation XI,,kwazulu-natal-invitation-xi,false,3,
 278479,Blue,Blue,Blue,blue,false,,
 278493,Black,Black,Black,black,false,,
+279182,Victoria CA,Victoria CA XI,VICCA,victoria-ca-xi,false,2,/lsci/db/PICTURES/CMS/390400/390439.jpg
 279444,Team A,Team A,TeamA,team-a,false,6,/lsci/db/PICTURES/CMS/374400/374431.png
 279446,Team B,Team B,TeamB,team-b,false,6,/lsci/db/PICTURES/CMS/374400/374431.png
 280884,Reebok XI,Reebok XI,,reebok-xi,false,6,
@@ -2606,7 +2607,7 @@ id,name,longName,abbreviation,slug,isCountry,countryId,imageUrl
 525157,,Hertfordshire Under-13s,,hertfordshire-under-13s,false,1,
 525158,,Hertfordshire Under-14s,,hertfordshire-under-14s,false,1,
 527123,T+T XI,Trinidad & Tobago XI,T+TXI,trinidad-tobago-xi,false,4,
-527124,AFG XI,Afghanistan XI,AFGXI,afghanistan-xi,false,40,/lsci/db/PICTURES/CMS/155100/155122.png
+527124,AFG XI,Afghanistan XI,AFGXI,afghanistan-xi,false,40,/lsci/db/PICTURES/CMS/381800/381892.png
 527125,USA XI,United States of America XI,USXI,united-states-of-america-xi,false,11,/lsci/db/PICTURES/CMS/156800/156801.png
 527512,Rwenzori,Rwenzori Warriors,Rwenz,rwenzori-warriors,false,35,
 527514,Rift,Rift Valley Rhinos,Rift,rift-valley-rhinos,false,26,
@@ -2771,7 +2772,7 @@ id,name,longName,abbreviation,slug,isCountry,countryId,imageUrl
 642413,Amazon,Guyana Amazon Warriors,GAW,guyana-amazon-warriors,false,4,/lsci/db/PICTURES/CMS/313400/313482.logo.png
 642415,Tallawahs,Jamaica Tallawahs,JT,jamaica-tallawahs,false,4,/lsci/db/PICTURES/CMS/313400/313483.logo.png
 642417,Zouks,St Lucia Zouks,ZOUKS,st-lucia-kings,false,4,/lsci/db/PICTURES/CMS/325900/325975.png
-642421,Red Steel,Trinidad & Tobago Red Steel,RedSt,trinbago-knight-riders,false,4,/lsci/db/PICTURES/CMS/313400/313485.logo.png
+642421,Trinbago,Trinbago Knight Riders,TKR,trinbago-knight-riders,false,4,/lsci/db/PICTURES/CMS/313400/313485.logo.png
 642559,Samoa U19s,Samoa Under-19s,Sam19,samoa-under-19s,false,141,/lsci/db/PICTURES/CMS/386300/386357.png
 644257,EDP Under-19,England Development Programme Under-19s,EDP19,england-development-programme-under-19s,false,1,
 648355,Bdesh U13,Bangladesh Under-13s,BdU13,bangladesh-under-13s,false,25,
@@ -2984,7 +2985,7 @@ id,name,longName,abbreviation,slug,isCountry,countryId,imageUrl
 904595,North Win Wm,North Windward Islands Women,NWWMN,north-windward-islands-women,false,4,
 904597,South Win Wm,South Windward Islands Women,SWWMN,south-windward-islands-women,false,4,
 906667,EWA Surrey,England Women's Academy/Surrey Boys,EWASY,england-women-s-academy-surrey-boys,false,1,
-916935,Shivamogga,Shivamogga Lions,SHL,shivamogga-lions,false,6,/lsci/db/PICTURES/CMS/365700/365708.jpg
+916935,Shivamogga,Shivamogga Yodhas,SHY,shivamogga-yodhas,false,6,/lsci/db/PICTURES/CMS/365700/365708.jpg
 918363,NSW U18 Wmn,New South Wales Under-18s Women,U18WM,new-south-wales-under-18s-women,false,2,
 918641,HKCA U-19,Hong Kong Cricket Association Under-19s,HKG19,hong-kong-cricket-association-under-19s,false,19,
 918645,Diasqua,Diasqua Little Sai Wan Cricket Club,DLSWC,diasqua-little-sai-wan-cricket-club,false,19,/lsci/db/PICTURES/CMS/313500/313512.logo.png
@@ -3148,12 +3149,12 @@ id,name,longName,abbreviation,slug,isCountry,countryId,imageUrl
 1045863,MCA-BPRES-XI,MCA President's XI,MCAXI,malaysia-cricket-association-president-s-xi,false,16,
 1047327,Chepauk,Chepauk Super Gillies,CSG,chepauk-super-gillies,false,6,/lsci/db/PICTURES/CMS/313500/313528.logo.png
 1047329,Patriots,Albert TUTI Patriots,TP,skm-salem-spartans,false,6,/lsci/db/PICTURES/CMS/383300/383352.png
-1047331,Kaalai,Idream Karaikudi Kaalai,KK,idream-tiruppur-tamizhans,false,6,/lsci/db/PICTURES/CMS/341500/341576.png
-1047333,Veerans,VB Kanchi Veerans,VBKV,nellai-royal-kings,false,6,/lsci/db/PICTURES/CMS/341400/341435.png
-1047335,Kovai,Lyca Kovai Kings,LKK,lyca-kovai-kings,false,6,/lsci/db/PICTURES/CMS/313500/313532.logo.png
+1047331,Tiruppur,IDream Tiruppur Tamizhans,TT,idream-tiruppur-tamizhans,false,6,/lsci/db/PICTURES/CMS/341500/341576.png
+1047333,Nellai,Nellai Royal Kings,NRK,nellai-royal-kings,false,6,/lsci/db/PICTURES/CMS/341400/341435.png
+1047335,Kovai,Lyca Kovai Kings,LKK,vida-kovai-kings,false,6,/lsci/db/PICTURES/CMS/420900/420946.png
 1047337,Trichy,Trichy Grand Cholas,TRI,trichy-grand-cholas,false,6,/lsci/db/PICTURES/CMS/383300/383351.png
 1047339,Dindigul,Dindigul Dragons,DD,dindigul-dragons,false,6,/lsci/db/PICTURES/CMS/313500/313534.logo.png
-1047341,Madurai,Siechem Madurai Panthers,SMP,siechem-madurai-panthers,false,6,/lsci/db/PICTURES/CMS/313500/313535.logo.png
+1047341,Madurai,Siechem Madurai Panthers,SMP,madurai-panthers,false,6,/lsci/db/PICTURES/CMS/420900/420948.png
 1048457,SCA-BPRES-XI,Singapore CA Presidents's XI,SBPXI,singapore-cricket-association-presidents-s-xi,false,23,
 1049277,Jaffna CC,Jaffna Central College,JCC,jaffna-central-college,false,8,
 1049279,Kingswood,Kingswood College (Kandy),KINGS,kingswood-college-kandy,false,8,
@@ -3646,11 +3647,11 @@ id,name,longName,abbreviation,slug,isCountry,countryId,imageUrl
 1203809,PAK Wmn Emer,Pakistan Women Emerging Players,PWEP,pakistan-women-emerging-players,false,7,
 1204494,Rockets,Trent Rockets (Men),TR-M,trent-rockets-men,false,1,/lsci/db/PICTURES/CMS/412600/412625.png
 1204495,Brave,Southern Brave (Men),SB-M,southern-brave-men,false,1,/lsci/db/PICTURES/CMS/412600/412622.png
-1204496,N S-Chargers,Northern Superchargers (Men),NSC-M,sunrisers-leeds-men,false,1,/lsci/db/PICTURES/CMS/412600/412624.png
+1204496,Sunrisers,Sunrisers Leeds (Men),SRL-M,sunrisers-leeds-men,false,1,/lsci/db/PICTURES/CMS/412600/412624.png
 1204497,Fire,Welsh Fire (Men),WF-M,welsh-fire-men,false,1,/lsci/db/PICTURES/CMS/412600/412618.png
 1204498,Invincibles,Oval Invincibles (Men),OI-M,mi-london-men,false,1,/lsci/db/PICTURES/CMS/412600/412621.png
 1204499,Originals,Manchester Originals (Men),MO-M,manchester-super-giants-men,false,1,/lsci/db/PICTURES/CMS/412600/412620.png
-1204500,Spirit,London Spirit (Men),LS-M,london-spirit-men,false,1,/lsci/db/PICTURES/CMS/412600/412617.png
+1204500,Spirit,London Spirit (Men),LS-M,london-spirit-men,false,1,/lsci/db/PICTURES/CMS/420100/420110.jpg
 1204501,Phoenix,Birmingham Phoenix (Men),BP-M,birmingham-phoenix-men,false,1,/lsci/db/PICTURES/CMS/412600/412619.png
 1204573,Tuskers,Karnataka Tuskers,KT,karnataka-tuskers,false,27,
 1204574,Gladiators,Deccan Gladiators,DG,deccan-gladiators,false,27,/lsci/db/PICTURES/CMS/371900/371941.png
@@ -3660,12 +3661,12 @@ id,name,longName,abbreviation,slug,isCountry,countryId,imageUrl
 1207050,Oman A,Oman A,OMA-A,oman-a,false,37,/lsci/db/PICTURES/CMS/188000/188091.jpg
 1208116,Phoenix,Birmingham Phoenix (Women),BP-W,birmingham-phoenix-women,false,1,/lsci/db/PICTURES/CMS/412600/412619.png
 1208118,Originals,Manchester Originals (Women),MO-W,manchester-super-giants-women,false,1,/lsci/db/PICTURES/CMS/412600/412620.png
-1208119,Spirit,London Spirit (Women),LS-W,london-spirit-women,false,1,/lsci/db/PICTURES/CMS/412600/412617.png
+1208119,Spirit,London Spirit (Women),LS-W,london-spirit-women,false,1,/lsci/db/PICTURES/CMS/420100/420110.jpg
 1208120,N S-Chargers,Northern Superchargers (Women),NSC-W,sunrisers-leeds-women,false,1,/lsci/db/PICTURES/CMS/412600/412624.png
 1208121,Brave,Southern Brave (Women),SB-W,southern-brave-women,false,1,/lsci/db/PICTURES/CMS/412600/412622.png
 1208122,Invincibles,Oval Invincibles (Women),OI-W,mi-london-women,false,1,/lsci/db/PICTURES/CMS/412600/412621.png
 1208123,Rockets,Trent Rockets (Women),TR-W,trent-rockets-women,false,1,/lsci/db/PICTURES/CMS/412600/412625.png
-1208124,Fire,Welsh Fire (Women),WF-W,welsh-fire-women,false,1,/lsci/db/PICTURES/CMS/412600/412618.png
+1208124,Fire,Welsh Fire (Women),WF-W,welsh-fire-women,false,1,/lsci/db/PICTURES/CMS/420100/420108.png
 1208512,Oryx,Flying Oryx,FO,flying-oryx,false,136,
 1208513,Riders,Desert Riders,DR,desert-riders,false,136,
 1208514,Gallopers,Swift Gallopers,SG,swift-gallopers,false,136,
@@ -3895,7 +3896,7 @@ id,name,longName,abbreviation,slug,isCountry,countryId,imageUrl
 1336138,AUS-WMN U19,Australia Women Under-19s,AUW19,australia-women-under-19s,false,2,/lsci/db/PICTURES/CMS/340400/340493.png
 1336139,BAN-WMN U19,Bangladesh Women Under-19s,BAW19,bangladesh-women-under-19s,false,25,/lsci/db/PICTURES/CMS/341400/341456.png
 1336141,IND-WMN U19,India Women Under-19s,INW19,india-women-under-19s,false,6,/lsci/db/PICTURES/CMS/381800/381895.png
-1336142,PAK-WMN U19,Pakistan Women Under-19s,PAW19,pakistan-women-under-19s,false,7,/lsci/db/PICTURES/CMS/313100/313129.logo.png
+1336142,PAK-WMN U19,Pakistan Women Under-19s,PAW19,pakistan-women-under-19s,false,7,/lsci/db/PICTURES/CMS/419200/419214.png
 1336143,UAE-WMN U19,United Arab Emirates Women Under-19s,UAE-W,united-arab-emirates-women-under-19s,false,27,/lsci/db/PICTURES/CMS/313100/313147.logo.png
 1336144,SCO-WMN U19,Scotland Women Under-19s,SCW19,scotland-women-under-19s,false,30,/lsci/db/PICTURES/CMS/313100/313150.logo.png
 1336145,SA-WMN U19,South Africa Women Under-19s,SAW19,south-africa-women-under-19s,false,3,/lsci/db/PICTURES/CMS/313100/313125.logo.png
@@ -3977,7 +3978,7 @@ id,name,longName,abbreviation,slug,isCountry,countryId,imageUrl
 1389069,Hunters,Shaheen Hunters,SHH,shaheen-hunters,false,40,/lsci/db/PICTURES/CMS/364600/364679.png
 1389070,Defenders,Abasin Defenders,ABD,abasin-defenders,false,40,/lsci/db/PICTURES/CMS/364600/364680.png
 1389071,Eagles,Shamshad Eagles,SHE,shamshad-eagles,false,40,/lsci/db/PICTURES/CMS/382100/382105.jpg
-1390845,Dragons,Mangalore Dragons,MLD,mangalore-dragons,false,6,/lsci/db/PICTURES/CMS/365300/365305.png
+1390845,Dragons,Mangalore Dragons,MLD,coastal-kings-mangaluru,false,6,/lsci/db/PICTURES/CMS/365300/365305.png
 1391377,Mah-e-Par,Mah-e-Par Stars,MPS,mah-e-par-stars,false,40,/lsci/db/PICTURES/CMS/365400/365480.png
 1391378,Maiwand,Maiwand Champions,MAC,maiwand-champions,false,40,/lsci/db/PICTURES/CMS/365400/365481.png
 1392078,Riders,Atlanta Riders,ATR,atlanta-riders,false,11,/lsci/db/PICTURES/CMS/365600/365601.png
@@ -4002,12 +4003,13 @@ id,name,longName,abbreviation,slug,isCountry,countryId,imageUrl
 1409280,Zimbabwe U25,Zimbabwe Under-25s,ZIM25,zimbabwe-under-25s,false,9,/lsci/db/PICTURES/CMS/340500/340503.png
 1410092,IRE Emerging,Ireland Emerging Players,IRE-E,ireland-emerging-players,false,29,/lsci/db/PICTURES/CMS/313100/313149.logo.png
 1412321,Dhaka,Durdanto Dhaka,DRD,durdanto-dhaka,false,25,/lsci/db/PICTURES/CMS/372400/372474.png
-1413171,Ghani Glass,Ghani Glass,GHG,ghani-glass,false,7,/lsci/db/PICTURES/CMS/372900/372967.png
+1413171,Ghani,Ghani,GHA,ghani,false,7,/lsci/db/PICTURES/CMS/372900/372967.png
 1413720,Wonders Club,Wonders Club Noida,WCN,wonders-club-noida,false,6,/lsci/db/PICTURES/CMS/372800/372871.jpg
 1416774,ZIM-A WMN,Zimbabwe A Women,ZWA,zimbabwe-a-women,false,9,/lsci/db/PICTURES/CMS/340500/340503.png
 1417179,Maori Women,New Zealand Maori Women,MAO-W,new-zealand-maori-women,false,5,
 1422552,Lantau Women,Lantau Cricket Club Women,LCC-W,lantau-cricket-club-women,false,19,/lsci/db/PICTURES/CMS/376600/376687.png
 1424468,GT Academy,Gazi Tyres Cricket Academy,GTCA,gazi-tyres-cricket-academy,false,25,/lsci/db/PICTURES/CMS/322100/322143.jpg
+1425418,UNI Sport SA,University Sport South Africa,USSA,university-sport-south-africa,false,3,/lsci/db/PICTURES/CMS/377900/377968.jpg
 1426782,NE Women,North East Zone Women,NEZ-W,north-east-zone-women,false,6,
 1428675,Falcons,Antigua and Barbuda Falcons,ABF,antigua-and-barbuda-falcons,false,4,/lsci/db/PICTURES/CMS/379000/379075.png
 1436427,Band-e Amir,Band-e Amir Stars,BAS,band-e-amir-stars,false,40,/lsci/db/PICTURES/CMS/382000/382022.png
@@ -4017,6 +4019,7 @@ id,name,longName,abbreviation,slug,isCountry,countryId,imageUrl
 1438082,CRO Women,Croatia Women,CRO-W,croatia-women,false,72,/lsci/db/PICTURES/CMS/383000/383041.png
 1438086,Cyprus Women,Cyprus Women,CYP-W,cyprus-women,false,74,/lsci/db/PICTURES/CMS/383000/383068.png
 1440821,Young Lions,Young Lions Invitational XI,ENGYL,young-lions-invitational-xi,false,1,/lsci/db/PICTURES/CMS/313200/313257.logo.png
+1442518,Strikers,Strikers,STR,strikers,false,29,/lsci/db/PICTURES/CMS/384400/384495.png
 1445474,FIN Women,Finland Women,FIN-W,finland-women,false,80,/lsci/db/PICTURES/CMS/383000/383045.png
 1446362,Karaikal,Karaikal Kniights,KAK,karaikal-kniights,false,6,/lsci/db/PICTURES/CMS/385700/385781.png
 1446363,Mahe,Mahe Megalo Strikers,MAS,mahe-megalo-strikers,false,6,/lsci/db/PICTURES/CMS/385700/385782.png
@@ -4105,8 +4108,12 @@ id,name,longName,abbreviation,slug,isCountry,countryId,imageUrl
 1523799,Kingsmen,Hyderabad Kingsmen,HHK,hyderabad-kingsmen,false,7,/lsci/db/PICTURES/CMS/414900/414947.png
 1523800,Rawalpindiz,Rawalpindiz,RWP,rawalpindiz,false,7,/lsci/db/PICTURES/CMS/414900/414948.png
 1528310,ZAM Women,Zambia Women,ZAM,zambia-women,false,48,/lsci/db/PICTURES/CMS/411200/411248.png
+1533124,Scorchers XI,Perth Scorchers XI,PS-XI,perth-scorchers-xi,false,2,/lsci/db/PICTURES/CMS/313400/313468.logo.png
+1534178,Kingsmen,Jamaica Kingsmen,JAK,jamaica-kingsmen,false,4,/lsci/db/PICTURES/CMS/420500/420541.png
+1534721,Dragons,Dragons Women,DRW,dragons-women,false,29,/lsci/db/PICTURES/CMS/416400/416473.png
 1539629,Tigers,Uppsala Tigers,UPT,uppsala-tigers,false,153,/lsci/db/PICTURES/CMS/417800/417842.jpg
 1539630,Phoenix,Gothenburg Phoenix,GOP,gothenburg-phoenix,false,153,/lsci/db/PICTURES/CMS/417800/417846.jpg
+1540212,Empress,Jamaica Empress Women,JAE,jamaica-empress-women,false,4,/lsci/db/PICTURES/CMS/418000/418053.png
 1540512,Titans,Ranchi Titans,RNT,ranchi-titans,false,6,/lsci/db/PICTURES/CMS/418100/418157.png
 1540513,Super Kings,Koylanchal Super Kings,KSK,koylanchal-super-kings,false,6,/lsci/db/PICTURES/CMS/418100/418154.png
 1540515,Steelers,Jamshedpur Steelers,JAS,jamshedpur-steelers,false,6,/lsci/db/PICTURES/CMS/418100/418156.png
@@ -4123,3 +4130,19 @@ id,name,longName,abbreviation,slug,isCountry,countryId,imageUrl
 1540528,Falcons,Ujjain Falcons,UJF,ujjain-falcons,false,6,/lsci/db/PICTURES/CMS/418100/418171.png
 1540529,Jaguars,Rewa Jaguars,REJ,rewa-jaguars,false,6,/lsci/db/PICTURES/CMS/418100/418169.png
 1540530,Eagles,Royal Nimar Eagles,RNE,royal-nimar-eagles,false,6,/lsci/db/PICTURES/CMS/418100/418170.png
+1542356,Aces,Anvita Khammam Aces,AKA,anvita-khammam-aces,false,6,/lsci/db/PICTURES/CMS/418700/418786.png
+1542359,Strikers,Palamuru Strikers,PAS,palamuru-strikers,false,6,/lsci/db/PICTURES/CMS/418700/418789.png
+1542360,Knights,Anurag Nalgonda Knights,ANK,anurag-nalgonda-knights,false,6,/lsci/db/PICTURES/CMS/418700/418788.png
+1542361,Risers,Ranga Reddy Risers,RRR,ranga-reddy-risers,false,6,/lsci/db/PICTURES/CMS/418700/418790.png
+1542362,Falcons,Medak Falcons,MEF,medak-falcons,false,6,/lsci/db/PICTURES/CMS/418700/418787.png
+1542363,Warriors,Warangal Warriors,WAW,warangal-warriors,false,6,/lsci/db/PICTURES/CMS/418700/418791.png
+1542364,E-Champions,Hyderabad E-Champions,HYC,hyderabad-e-champions,false,6,/lsci/db/PICTURES/CMS/418700/418783.png
+1542365,Diamonds,Karimnagar Diamonds,KAD,karimnagar-diamonds,false,6,/lsci/db/PICTURES/CMS/418700/418784.png
+1547865,Dockers,Rotterdam Dockers,RTD,rotterdam-dockers,false,15,/lsci/db/PICTURES/CMS/420400/420469.png
+1547866,Flames,Amsterdam Flames,AMF,amsterdam-flames,false,15,/lsci/db/PICTURES/CMS/420400/420463.png
+1547867,Wolves,Belfast Wolves,BLW,belfast-wolves,false,29,/lsci/db/PICTURES/CMS/420400/420464.png
+1547868,Guardians,Dublin Guardians,DBG,dublin-guardians,false,29,/lsci/db/PICTURES/CMS/421900/421911.png
+1547869,Rockers,Edinburgh Castle Rockers,ECR,edinburgh-castle-rockers,false,30,/lsci/db/PICTURES/CMS/420400/420466.png
+1547870,Cosmic,Glasgow Cosmic,GLC,glasgow-cosmic,false,30,/lsci/db/PICTURES/CMS/420400/420468.png
+1549016,Kingsmen,Hyderabad Kingsmen Academy,HHKA,hyderabad-kingsmen-academy,false,7,/lsci/db/PICTURES/CMS/421500/421505.png
+1553774,Markhor IT,Markhor IT Solutions,MITS,markhor-it-solutions,false,7,

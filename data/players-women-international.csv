@@ -186,7 +186,7 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 53685,E Liddell,Emma Liddell,Emma Liddell,emma-liddell,F,1980-03-30,2,rhb,lm,
 53687,BA Daniels,Barbara Daniels,Barbara Ann Daniels,barbara-daniels,F,1964-12-17,1,rhb,rm,
 53689,J Smit,Jane Smit,Jane Smit,jane-smit,F,1972-12-24,1,rhb,,
-53691,SV Collyer,Sarah Collyer,Sarah Victoria Collyer,sarah-collyer,F,1980-10-03,1,rhb,rm,
+53691,SV Collyer,Sarah Collyer,Sarah Victoria Collyer,sarah-collyer,F,1980-10-03,134,rhb,rm,
 53693,CJ Connor,Clare Connor,Clare Joanne Connor,clare-connor,F,1976-09-01,1,rhb,,
 53694,CE Gough,Clare Gough,Clare Elizabeth Gough,clare-gough,F,1982-09-07,1,,,
 53696,CM Edwards,Charlotte Edwards,Charlotte Marie Edwards,charlotte-edwards,F,1979-12-17,1,rhb,lb,top-order batter
@@ -610,7 +610,7 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 54547,CM Oyler,Carol Oyler,Carol Mary Oyler,carol-oyler,F,1947-null-null,5,,,
 54548,JM Stonell,Jean Stonell,Jean Melva Stonell,jean-stonell,F,1929-null-null,5,,,
 54559,SE Charteris,Selena Charteris,Selena Eloise Charteris,selena-charteris,F,1981-06-05,5,rhb,ob,
-54565,SW Bates,Suzie Bates,Suzannah Wilson Bates,suzie-bates,F,1987-09-16,5,rhb,rm,allrounder
+54565,SW Bates,Suzie Bates,Suzannah Wilson Bates,suzie-bates,F,1987-09-16,5,rhb,rm|ob,allrounder
 54569,M Harris,Mary Harris,Mary Harris,mary-harris,F,,5,,,
 54570,C Miller,Chris Miller,Chris Miller,chris-miller,F,,5,,,
 54571,AL Bezuidenhout,Alicia Bezuidenhout,Alicia Louise Bezuidenhout,alicia-bezuidenhout,F,1967-09-11,3,rhb,ob,
@@ -684,7 +684,69 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 54646,M du Preez,Mignon du Preez,Mignon du Preez,mignon-du-preez,F,1989-06-13,3,rhb,,top-order batter
 54650,L de Beer,Lonell de Beer,Lonell de Beer,lonell-de-beer,F,1980-06-12,3,rhb,lb,
 54653,JF McNaughton,Jean McNaughton,Jean Fay McNaughton,jean-mcnaughton,F,1936-04-10,3,rhb,rmf,
+54654,CMW Hes,Caroline Hes,Caroline Myrtle Willemijn Hes,caroline-hes,F,1982-11-11,15,rhb,rmf,
+54656,PJ te Beest,Pauline te Beest,Pauline Jantina te Beest,pauline-te-beest,F,1970-02-13,15,rhb,,
+54658,T van der Gun,Tessa van der Gun,Tessa van der Gun,tessa-van-der-gun,F,1982-07-24,15,rhb,,
+54659,M Flieringa,Martika Flieringa,Martika Flieringa,martika-flieringa,F,1978-11-17,15,rhb,,
+54661,CFF Oudolf,Cheraldine Oudolf,Cheraldine Fredrika Francina Oudolf,cheraldine-oudolf,F,1980-05-04,15,rhb,rmf,
+54663,CA Salomons,Caroline Salomons,Caroline Aimee Salomons,caroline-salomons,F,1974-07-20,15,rhb,ob,
+54665,ML de Boer,Teuntje de Boer,Martien Louise de Boer,teuntje-de-boer,F,1968-05-31,15,rhb,rm,
+54667,C Verheul,Carly Verheul,Carly Verheul,carly-verheul,F,1980-01-12,15,rhb,,
+54669,MA Koster,Maartje Köster,Maartje Alexandra Köster,maartje-k-ster,F,1975-03-03,15,rhb,rm,
+54670,JC Hartenhof,Jolet Hartenhof,Jolet Caroline Hartenhof,jolet-hartenhof,F,1979-09-23,15,rhb,rfm,
+54671,M Kornet,Mandy Kornet,Mandy Kornet,mandy-kornet,F,1985-02-03,15,rhb,rmf,
+54672,G Ludwig,Geeshe Ludwig,Geeshe Ludwig,geeshe-ludwig,F,1967-12-05,15,rhb,rm,
+54674,E Janss,Edmee Janss,Edmee Janss,edmee-janss,F,1965-07-04,15,rhb,,
+54676,B Viguurs,Birgit Viguurs,Birgit Viguurs,birgit-viguurs,F,1972-06-24,15,rhb,rm,
+54678,IW Jharap,Iris Jharap,Iris Widiawatie Jharap,iris-jharap,F,1970-05-01,15,rhb,rfm,
+54680,S Kottman,Sandra Kottman,Sandra Kottman,sandra-kottman,F,1967-05-20,15,lhb,lm,
+54682,J Howard,Jiska Howard,Jiska Howard,jiska-howard,F,1971-09-06,15,rhb,,
+54684,EI Reynolds,Elise Reynolds,Elise Irene Reynolds,elise-reynolds,F,1969-03-25,15,rhb,rfm,
 54686,RC Milburn,Rowan Milburn,Rowan Claire Milburn,rowan-milburn,F,1977-06-18,5,rhb,,wicketkeeper
+54687,M Toussaint,Minou Toussaint,Minou Toussaint,minou-toussaint,F,,15,,,
+54688,AS Tanke,Annemarie Tanke,Anne-Maria Suzanne Tanke,annemarie-tanke,F,1978-02-27,15,rhb,lb,
+54689,CH Rambaldo,Caroline Rambaldo,Caroline H Rambaldo,caroline-rambaldo,F,,15,,,
+54691,LM Hoitink,Leonie Hoitink,Leonie Martine Hoitink,leonie-hoitink,F,1973-01-20,15,rhb,rm,
+54692,M de Boer,Mickey de Boer,Mickey de Boer,mickey-de-boer,F,,15,,,
+54693,I Leurs,Inge Leurs,Inge Leurs,inge-leurs,F,1975-01-01,15,rhb,,
+54694,MA de Regt,Merel de Regt,Merel A de Regt,merel-de-regt,F,1981-12-14,15,rhb,,
+54695,H Dinnissen,Hilone Dinnissen,Hilone Dinnissen,hilone-dinnissen,F,1965-06-08,15,,,
+54696,I Dulfer-Keijzer,Ingrid Keyzer,Ingrid Dulfer-Keijzer,ingrid-keyzer,F,1964-02-22,15,rhb,rmf,
+54697,C Eveleens,Cornelia Eveleens,Cornelia Eveleens,cornelia-eveleens,F,1962-null-null,15,,,
+54698,W Gerritsen,Wendy Gerritsen,Wendy Gerritsen,wendy-gerritsen,F,1972-10-06,15,,,
+54699,C Grevers,Chantal Grevers,Chantal Grevers,chantal-grevers,F,1961-null-null,15,,lm,
+54700,M Grunsing,Muriel Grunsing,Muriel Grunsing,muriel-grunsing,F,,15,,,
+54701,DL Loman,Dorine Loman,Dorine Liliane Loman,dorine-loman,F,1960-09-30,15,rhb,rmf,
+54702,M Hommels,Marieke Hommels,Marieke Hommels,marieke-hommels,F,,15,,,
+54704,MEC de Fouw,Caroline de Fouw,Margarethe Everdine Caroline de Fouw,caroline-de-fouw,F,1966-05-12,15,rhb,ob,
+54705,D Kooij,Debby Kooij,Debby Kooij,debby-kooij,F,1968-12-27,15,rhb,,
+54706,I Koppe-V-Dishoek,Isabelle Koppe-V-Dishoek,Isabelle Koppe-V-Dishoek,isabelle-koppe-v-dishoek,F,1953-null-null,15,,,
+54707,A Kroon,Annette Kroon,Annette Kroon,annette-kroon,F,,15,,,
+54708,I Kure,Inge Kure,Inge Kure,inge-kure,F,1965-11-07,15,rhb,rmf,
+54709,B Meihuizen,Barbara Meihuizen,Barbara Meihuizen,barbara-meihuizen,F,,15,,,
+54710,S Melchers,Sashia Melchers,Sashia Melchers,sashia-melchers,F,1962-10-11,15,,,
+54711,L Offenberg,Lonneke Offenberg,Lonneke Offenberg,lonneke-offenberg,F,,15,,,
+54713,HW Rambaldo,Helmien Rambaldo,Helmien W Rambaldo,helmien-rambaldo,F,1980-11-13,15,rhb,rm,
+54714,A van Noortwijk,Ariette van Noortwijk,Ariette van Noortwijk,ariette-van-noortwijk,F,,15,,,
+54715,R Scheepstra,Remke Scheepstra,Remke Scheepstra,remke-scheepstra,F,,15,,,
+54716,I Schoof,Irene Schoof,Irene Schoof,irene-schoof,F,,15,,,
+54717,M Schroeder,Maaike Schroeder,Maaike Schroeder,maaike-schroeder,F,,15,,,
+54718,A van de Broeke,Andrea van de Broeke,Andrea van de Broeke,andrea-van-de-broeke,F,,15,,,
+54719,C van der Flier,Cor van der Flier,Cor van der Flier,cor-van-der-flier,F,,15,,,
+54720,E van Leeuwen,Eugenie van Leeuwen,Eugenie van Leeuwen,eugenie-van-leeuwen,F,,15,lhb,rm,
+54721,A van Lier,Anita van Lier,Anita van Lier,anita-van-lier,F,,15,,,
+54722,K van Rijn,Karen van Rijn,Karen van Rijn,karen-van-rijn,F,,15,,,
+54723,B van Teunenbroek,Babette van Teunenbroek,Babette van Teunenbroek,babette-van-teunenbroek,F,1960-null-null,15,,,
+54724,E Veltman,Esther Veltman,Esther Veltman,esther-veltman,F,,15,,,
+54725,A Battenberg-Venturini,Angela Batenberg-Venturini,Angela Batenberg-Venturini,angela-batenberg-venturini,F,1964-11-19,15,,rm,
+54726,L Vernout,Liesbeth Vernout,Liesbeth Vernout,liesbeth-vernout,F,,15,,,
+54727,V Wesenhagen,Vanda Wesenhagen,Vanda Wesenhagen,vanda-wesenhagen,F,1958-null-null,15,,,
+54728,K Zorab,Kirsten Zorab,Kirsten Zorab,kirsten-zorab,F,,15,,,
+54730,C van de Kieft,Claudine van de Kieft,Claudine van de Kieft,claudine-van-de-kieft,F,1972-07-14,15,,,
+54733,MAC Molenaar,Marjolijn Molenaar,Marjolijn A C Molenaar,marjolijn-molenaar,F,1983-10-24,15,rhb,rmf,
+54734,S Keijzer-Klein,Saskia Keijzer-Klein,Saskia Keijzer-Klein,saskia-keijzer-klein,F,,15,,,
+54735,ML Loman,Madeleine Loman,Madeleine Leonore Loman,madeleine-loman,F,1967-01-27,15,rhb,sla,
+54736,I van der Elst,Ingrid van der Elst,Ingrid van der Elst,ingrid-van-der-elst,F,1955-05-04,15,rhb,ob,
 54738,SARC Silva,Rasanjali Chandima Silva,Sendapperuma Archchige Rasanjali Chandima Silva,rasanjali-chandima-silva,F,1971-11-26,8,lhb,rfm,
 54740,BAL Priyadarshani,Lalana Priyadarshani,Bulathshenal Araggelage Lalana Priyadarshani,lalana-priyadarshani,F,1980-09-01,8,rhb,rfm,
 54742,ADH Abeysinghe,Hiroshi Abeysinghe,Amathagodage Don Hiroshi Abeysinghe,hiroshi-abeysinghe,F,1978-11-02,8,rhb,ob,allrounder
@@ -701,8 +763,10 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 54767,KR Perera,Ramani Perera,Kurunegalage Ramani Perera,ramani-perera,F,1976-08-29,8,rhb,lb,
 54768,V Bowen,Vanessa de Silva,Vanessa Bowen,vanessa-de-silva,F,1974-09-26,8,rhb,rm,
 54770,AD Janakanthymala,Janakanthy Mala,Augustnuge Don Janakanthymala,janakanthy-mala,F,1968-08-30,8,rhb,ob,
+54772,S Sivanantham,Suthershini Sivanantham,Suthershini Sivanantham,suthershini-sivanantham,F,1973-12-20,17,rhb,ob,
 54773,PGN de Silva,Ganga De Silva,P Ganga N De Silva,ganga-de-silva,F,,8,,,
 54774,D Gunaratne,Dedunu Gunaratne,Dedunu Gunaratne,dedunu-gunaratne,F,,8,,,
+54776,CR Seneviratna,Chamani Seneviratna,Chamani Roshini Seneviratna,chamani-seneviratna,F,1978-11-14,27,rhb,ob,
 54778,SP de Alwis,Suwini de Alwis,Suwini Priyanga de Alwis,suwini-de-alwis,F,1975-05-17,8,lhb,sla,
 54780,LDV Ratnayake,Vasanthi Ratnayake,Liyanage Don Vasanthi Ratnayake,vasanthi-ratnayake,F,1973-11-30,8,rhb,rm,
 54781,C Thalagalage,Chaturi Thalagalage,Chaturi Thalagalage,chaturi-thalagalage,F,,8,,,
@@ -714,6 +778,7 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 54831,EMTP Ekanayake,Thanuga Ekanayake,Ekanayake Mudiyanselage Thanuga Priyadarshani Ekanayake,thanuga-ekanayake,F,1972-02-24,8,rhb,,
 54836,SS Weerakkody,Sripali Weerakkody,Sripali Shiromala Weerakkody,sripali-weerakkody,F,1986-01-07,8,lhb,rm,
 54840,SK Dolawatte,Sandamali Dolawatte,Sandamali Kumuduni Dolawatte,sandamali-dolawatte,F,1983-02-10,8,rhb,lb,
+54842,HMD Rasangika,Deepika Rasangika,Herath Mudiyanselage Deepika Rasangika,deepika-rasangika,F,1983-12-13,57,lhb,lb,
 54850,HASD Siriwardene,Shashikala Siriwardene,Hettimulla Appuhamilage Shashikala Dedunu Siriwardene,shashikala-siriwardene,F,1985-02-14,8,rhb,ob,
 54854,PRCS Kumarihami,Chamari Polgampola,Polgampola Ralalage Chamari Sarojika Kumarihami,chamari-polgampola,F,1981-03-20,8,lhb,rmf,
 54865,CM Beggs,Caitriona Beggs,Caitriona Mary Beggs,caitriona-beggs,F,1977-07-15,29,rhb,rm,
@@ -770,6 +835,38 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 54946,JA Whelan,Jill Whelan,Jill Amy Whelan,jill-whelan,F,1986-12-28,29,rhb,rm,
 54947,EA Beamish,Emma Beamish,Emma Alice Beamish,emma-beamish,F,1982-11-29,29,rhb,rmf,
 54948,JLW Smythe,Jillian Smythe,Jillian Laura Weymouth Smythe,jillian-smythe,F,1985-12-19,29,rhb,rmf,
+54949,M Brock,Malene Brock,Malene Brock,malene-brock,F,,13,,,
+54950,DT Christensen,Dorte Christensen,Dorte T Christensen,dorte-christensen,F,,13,,,
+54951,E Christensen,Eva Christensen,Eva Christensen,eva-christensen,F,,13,,,
+54952,DS Christiansen,Dorte Christiansen,Dorte S Christiansen,dorte-christiansen,F,,13,,,
+54953,T Christiansen,Trine Christiansen,Trine Christiansen,trine-christiansen,F,,13,,,
+54954,AM Fernandes,Anne-Mette Fernandes,Anne-Mette Fernandes,anne-mette-fernandes,F,,13,,,
+54955,C Corneliussen,Charlotte Corneliussen,Charlotte Corneliussen,charlotte-corneliussen,F,,13,,,
+54956,M Frost,Mette Frost,Mette Frost,mette-frost,F,,13,,,
+54957,M Gregersen,Mette Gregersen,Mette Gregersen,mette-gregersen,F,,13,,,
+54958,L Hansen,Lene Hansen,Lene Hansen,lene-hansen,F,,13,,,
+54959,M Iversen,Malene Iversen,Malene Iversen,malene-iversen,F,,13,,,
+54960,H Jensen,Heidi Jensen,Heidi Jensen,heidi-jensen,F,,13,,,
+54961,J Jensen,Jane Jensen,Jane Jensen,jane-jensen,F,,13,,,
+54962,J Jonsson,Janni Jonsson,Janni Jonsson,janni-jonsson,F,,13,,,
+54963,P Jonsson,Pernille Jonsson,Pernille Jonsson,pernille-jonsson,F,,13,,,
+54964,S Jorgensen,Susanne Jorgensen,Susanne Jorgensen,susanne-jorgensen,F,,13,,,
+54965,H Kjaer,Heidi Kjaer,Heidi Kjaer,heidi-kjaer,F,,13,,,
+54966,B Langerhuus,Betina Langerhuus,Betina Langerhuus,betina-langerhuus,F,,13,,,
+54967,L Laursen,Lilli Laursen,Lilli Laursen,lilli-laursen,F,,13,,,
+54968,K Mikkelsen,Karin Mikkelsen,Karin Mikkelsen,karin-mikkelsen,F,,13,,,
+54969,S Neilsen,Susanne Neilsen,Susanne Neilsen,susanne-neilsen,F,,13,,,
+54970,VG Neilsen,Vibeke Neilsen,Vibeke G Neilsen,vibeke-neilsen,F,1959-null-null,13,,,
+54971,H Hansen,Henriette Hansen,Henriette Hansen,henriette-hansen,F,,13,,,
+54972,J Philipsen,Jette Philipsen,Jette Philipsen,jette-philipsen,F,,13,,,
+54973,H Pico,H Pico,H Pico,h-pico,F,,13,,,
+54974,M Slebsager,Marlene Slebsager,Marlene Slebsager,marlene-slebsager,F,,13,,,
+54975,C Smith,Charlotte Smith,Charlotte Smith,charlotte-smith,F,,13,,,
+54976,H Sorensen,Hanne Sorensen,Hanne Sorensen,hanne-sorensen,F,1975-07-19,13,,,
+54977,L Sorensen,Linda Sorensen,Linda Sorensen,linda-sorensen,F,1970-07-19,13,,,
+54978,P Thomsen,Pia Thomsen,Pia Thomsen,pia-thomsen,F,,13,,,
+54979,L Vilsgaard,Lene Vilsgaard,Lene Vilsgaard,lene-vilsgaard,F,,13,,,
+54980,I Neilsen,Inger Neilsen,Inger Neilsen,inger-neilsen,F,,13,,,
 54981,Abida Khan,Abida Khan,Abida Khan,abida-khan,F,,7,,,
 54982,Aisha Jalil,Aisha Jalil,Aisha Jalil,aisha-jalil,F,1980-09-17,7,,,
 54983,Asma Farzand,Asma Farzand,Asma Qureshi Farzand,asma-farzand,F,1981-01-01,7,,,
@@ -777,6 +874,7 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 54986,Khursheed Jabeen,Khursheed Jabeen,Khursheed Jabeen,khursheed-jabeen,F,1979-10-17,7,lhb,sla,
 54987,Kiran Ahtazaz,Kiran Ahtazaz,Kiran Ahtazaz,kiran-ahtazaz,F,1981-null-null,7,,,
 54989,Kiran Baluch,Kiran Baluch,Kiran Maqsood Baluch,kiran-baluch,F,1978-02-23,7,rhb,ob,
+54991,Mahewish Khan,Mahewish Khan,Mahewish Shahid Khan,mahewish-khan,F,1981-08-12,17,rhb,rf,
 54992,Maliha Hussain,Maliha Hussain,Maliha Hussain,maliha-hussain,F,1974-null-null,7,,,
 54994,Meher Minwalla,Meher Minwalla,Meher Dossa Minwalla,meher-minwalla,F,1977-12-10,7,rhb,rmf,
 54995,Muqudos Khan,Muqudos Khan,Shazia Muqudos Khan,muqudos-khan,F,1981-01-04,7,,,
@@ -862,6 +960,7 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 55162,J Alexander,J Alexander,J Alexander,j-alexander,F,,4,,,
 55164,NA Williams,Nelly Williams,Nelly Andrea Williams,nelly-williams,F,1980-08-16,4,rhb,rm,
 55166,DA Lewis,Debbie-Ann Lewis,Debbie-Ann Lewis,debbie-ann-lewis,F,1969-08-07,4,rhb,rm,
+55167,D Francis,Doris Francis,Doris Francis,doris-francis,F,1969-10-06,11,rhb,rm,
 55169,SC de Silva,Shane de Silva,Shane Calisa de Silva,shane-de-silva,F,1972-09-22,4,lhb,sla,
 55171,NAJ George,Nadine George,Nadine Andrea Julietta George,nadine-george,F,1968-10-15,4,lhb,,opening batter
 55172,G James,Glenicia James,Glenicia James,glenicia-james,F,1974-06-16,4,rhb,,
@@ -872,15 +971,39 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 55179,SJ Power,Stephanie Power,Stephanie Judith Power,stephanie-power,F,1957-04-19,4,rhb,,
 55180,C Hoyte,Clea Hoyte,Clea-Nasira Hoyte,clea-hoyte,F,1981-08-09,4,rhb,ob,
 55181,P Alfred,Pamela Alfred,Pamela Alfred,pamela-alfred,F,1978-09-28,4,rhb,rm,
+55183,I Goordial-John,Indomatie Goordial-John,Indomatie Goordial-John,indomatie-goordial-john,F,1985-08-09,17,rhb,ob,
 55185,F Cummings,Felicia Cummings,Felicia Gail Cummings,felicia-cummings,F,1968-02-20,4,rhb,sla,
 55187,A Mohammed,Anisa Mohammed,Anisa Mohammed,anisa-mohammed,F,1988-09-07,4,rhb,ob,bowler
+55188,C Atkins,Candacy Atkins,Candacy Atkins,candacy-atkins,F,1984-02-13,11,rhb,rm,
 55189,G Farrell,Gloria Farrell,Gloria Farrell,gloria-farrell,F,,4,,,
 55190,P Lynch,Paulette Lynch,Paulette Lynch,paulette-lynch,F,,4,,,
 55192,KN Alexander,Kirbyina Alexander,Kirbyina Nasie Alexander,kirbyina-alexander,F,1987-07-06,4,rhb,rf,
 55194,PY Lavine,Pamela Lavine,Pamela Yvonne Lavine,pamela-lavine,F,1969-03-12,4,rhb,rf,
 55195,CP Jack,Cordel Jack,Cordel Patricia Jack,cordel-jack,F,1982-02-22,4,rhb,ob,
+55196,K Anderson,Kari Anderson,Kari Anderson,kari-anderson,F,1982-10-21,30,rhb,rm,
+55197,VSC Maxwell,Vari Maxwell,Vari Symington Crawford Maxwell,vari-maxwell,F,1981-01-02,30,rhb,rm,
+55198,AM Galvin,Aileen Galvin,Aileen Martina Galvin,aileen-galvin,F,1968-07-22,30,rhb,rab,
+55199,SJ MacLean,Sara MacLean,Sara Jeanne MacLean,sara-maclean,F,1963-09-25,30,rhb,rab,
+55200,SR McIntyre,Shona McIntyre,Shona Rachel McIntyre,shona-mcintyre,F,1980-12-16,30,rhb,rmf,
+55201,DM Newlove,Denise Newlove,Denise Marie Newlove,denise-newlove,F,1977-02-02,30,rhb,,
+55202,A Ramsay,Ali Ramsay,Alison Ramsay,ali-ramsay,F,1982-07-28,30,rhb,rmf,
+55203,EJ Smith,Liz Smith,Elizabeth Jane Smith,liz-smith,F,1960-02-27,30,rhb,rmf,
+55204,LI Spence,Linda Spence,Linda Isobel Spence,linda-spence,F,1966-07-21,30,rhb,ob,
+55205,CJ Sweetman,Caroline Sweetman,Caroline Jane Sweetman,caroline-sweetman,F,1983-07-23,30,rhb,rs,
+55206,FE Urquhart,Fiona Urquhart,Fiona Elaine Urquhart,fiona-urquhart,F,1987-08-20,30,rhb,rfm,
+55207,PA Quin,Pamela Quin,Pamela Anne Quin,pamela-quin,F,1962-10-18,30,rhb,,
+55208,K White,Kathryn White,Kathryn White,kathryn-white,F,1978-07-27,30,rhb,rfm,
+55209,F Campbell,Fiona Campbell,Fiona Campbell,fiona-campbell,F,1981-06-29,30,rhb,lb,
+55210,S Aslam,Sahar Aslam,Sahar Aslam,sahar-aslam,F,1982-12-20,30,rhb,rm,
+55212,J Mudie,J Mudie,J Mudie,j-mudie,F,,30,,,
+55217,E Kuribayashi,Ema Kuribayashi,Ema Kuribayashi,ema-kuribayashi,F,1983-10-06,32,lhb,rmf,
+55219,S Kubota,Shizuka Kubota,Shizuka Kubota,shizuka-kubota,F,1983-07-12,32,rhb,rs,
 212709,JK Watts,Jo Watts,Joanna Karen Watts,jo-watts,F,1987-05-18,1,rhb,ob,
 215501,HL Colvin,Holly Colvin,Holly Louise Colvin,holly-colvin,F,1989-09-07,1,rhb,sla,bowler
+216636,ELT de Lange,Esther de Lange,Esther Laura Talitha de Lange,esther-de-lange,F,1984-02-18,15,rhb,ob,
+216637,IMG Westbury,Isabelle Westbury,Isabelle Mary G Westbury,isabelle-westbury,F,1990-03-08,15,,,allrounder
+216638,L Egging,Lotte Egging,Lotte Egging,lotte-egging,F,1988-06-08,15,rhb,rmf,
+216639,ME Nijman,Marijn Nijman,Marijn Elise Nijman,marijn-nijman,F,1985-08-27,15,rhb,rfm,
 220394,Sana Javed,Sana Javed,Sana Javed,sana-javed,F,1983-03-27,7,rhb,rmf,
 220656,Tasqeen Qadeer,Tasqeen Qadeer,Tasqeen Qadeer,tasqeen-qadeer,F,1979-04-18,7,rhb,rmf,
 220663,Armaan Khan,Armaan Khan,Armaan Khan,armaan-khan,F,1980-04-04,7,rhb,,
@@ -916,8 +1039,14 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 254168,DN Wyatt,Danni Wyatt-Hodge,Danielle Nicole Wyatt-Hodge,danni-wyatt-hodge,F,1991-04-22,1,rhb,ob,top-order batter
 254238,A Shrubsole,Anya Shrubsole,Anya Shrubsole,anya-shrubsole,F,1991-12-07,1,rhb,rm,bowler
 254239,SE Rowe,Susie Rowe,Susannah Elizabeth Rowe,susie-rowe,F,1987-04-14,1,rhb,rm,batter
+256484,Al Maseera Jahangir,Al Maseera Jahangir,Al Maseera Jahangir,al-maseera-jahangir,F,2008-06-11,27,rhb,ob,
 257508,EMH Nolan,Elaine Nolan,Elaine Mary Hannah Nolan,elaine-nolan,F,1981-05-05,29,rhb,rm,
+257509,DM Braat,Marloes Braat,Daniëlle Marloes Braat,marloes-braat,F,1990-04-06,15,rhb,rm,
+257510,AM Overhoff,Marijke Overhoff,Anna Marijke Overhoff,marijke-overhoff,F,1980-06-12,15,rhb,,
+257511,J Pashley,Jacqueline Pashley,Jacqueline Pashley,jacqueline-pashley,F,1979-05-25,15,rhb,,
+257706,D Prins,Denise Prins,Denise Prins,denise-prins,F,1983-02-22,15,rhb,,
 260229,Bismah Maroof,Bismah Maroof,Bismah Maroof,bismah-maroof,F,1991-07-18,7,lhb,lb,allrounder
+262364,S Sriharsha,Sindhu Sriharsha,Sindhu Sriharsha,sindhu-sriharsha,F,1988-08-17,11,rhb,,opening batter
 263473,DM Kimmince,Delissa Kimmince,Delissa Maree Kimmince,delissa-kimmince,F,1989-05-14,2,rhb,rm,bowler
 263980,G Sultana,Gouher Sultana,Gouher Sultana,gouher-sultana,F,1988-03-31,6,rhb,sla,bowler
 267611,NE Bolton,Nicole Bolton,Nicole Elizabeth Bolton,nicole-bolton,F,1989-01-17,2,lhb,ob,opening batter
@@ -960,15 +1089,20 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 301603,Salma Khatun,Salma Khatun,Salma Khatun,salma-khatun,F,1990-10-01,25,rhb,ob,allrounder
 301605,Shathira Jakir,Shathira Jakir,Shathira Jakir Jessy,shathira-jakir,F,1990-11-30,25,rhb,ob,
 301608,Tithy Sarkar,Tithy Sarkar,Tithy Rani Sarkar,tithy-sarkar,F,1990-08-12,25,rhb,ob,
+301738,S Tippoch,Sornnarin Tippoch,Sornnarin Tippoch,sornnarin-tippoch,F,1986-06-07,156,lhb,ob,allrounder
+301800,N Boochatham,Nattaya Boochatham,Nattaya Boochatham,nattaya-boochatham,F,1986-12-03,156,lhb,ob,allrounder
+302752,VCE Wattenberg,Violet Wattenberg,Violet Cornelia Elizabeth Wattenberg,violet-wattenberg,F,1978-12-05,15,rhb,,
+302754,CM de Groot,Carlijn de Groot,Carlijn M de Groot,carlijn-de-groot,F,1986-09-10,15,rhb,rm,
 305576,AJ Kenealy,Amy Kenealy,Amy Johanna Kenealy,amy-kenealy,F,1988-04-06,29,rhb,rm,
 305577,JC Carroll,Jean Carroll,Jean Christine Carroll,jean-carroll,F,1980-06-19,29,rhb,,
 305580,CL Murphy,Cathy Murphy,Catherine Louise Murphy,cathy-murphy,F,1983-09-26,29,rhb,rm,
+306201,A Aitken-Drummond,Abbi Aitken-Drummond,Abbi Aitken-Drummond,abbi-aitken-drummond,F,1991-04-11,30,rhb,rm,top-order batter
 306524,LM Kasperek,Leigh Kasperek,Leigh Meghan Kasperek,leigh-kasperek,F,1992-02-15,5,rhb,ob,bowler
 307942,AM Samaroo,Amanda Samaroo,Amanda Mindy Samaroo,amanda-samaroo,F,1992-11-02,4,rhb,rmf,
 307943,G Seetahal,Gaitri Seetahal,Gaitri Seetahal,gaitri-seetahal,F,1990-10-23,4,rhb,rmf,
 312174,FL Mackay,Frances Mackay,Frances Louise Mackay,frances-mackay,F,1990-06-01,5,rhb,ob,opening batter
 317139,P Marange,Precious Marange,Precious Marange,precious-marange,F,1982-11-26,9,lhb,ob,bowler
-317144,SM Mayers,Sharne Mayers,Sharne Mary Mayers,sharne-mayers,F,1992-07-19,9,rhb,ob,
+317144,SM Mayers,Sharne Mayers,Sharne Mary Mayers,sharne-mayers,F,1992-07-19,9,rhb,ob,middle-order batter
 317146,C Chatonzwa,Christabel Chatonzwa,Christabel Chatonzwa,christabel-chatonzwa,F,1990-04-23,9,rhb,ob,bowler
 317148,CS Mugeri-Tiripano,Chipo Mugeri-Tiripano,Chipo Spiwe Mugeri-Tiripano,chipo-mugeri-tiripano,F,1992-03-02,9,lhb,rm,allrounder
 317157,Sadia Yousuf,Sadia Yousuf,Sadia Yousuf,sadia-yousuf,F,1989-11-04,7,rhb,sla,
@@ -985,6 +1119,7 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 329336,MM Lanning,Meg Lanning,Meghann Moira Lanning,meg-lanning,F,1992-03-25,2,rhb,rm,top-order batter
 332543,HAM Samuddika,Maduri Samuddika,Hewanam Arachchige Maduri Samuddika,maduri-samuddika,F,1984-11-08,8,rhb,ob,
 333355,Nida Dar,Nida Dar,Nida Rashid Dar,nida-dar,F,1987-01-02,7,rhb,ob,bowling allrounder
+333936,P Siaka,Pauke Siaka,Pauke Siaka,pauke-siaka,F,1986-06-19,20,rhb,rm,
 333946,MEMO Scott-Hayward,Melissa Scott-Hayward,Melissa Erica Maria O'Carroll Scott-Hayward,melissa-scott-hayward,F,1990-08-10,29,rhb,rm,
 335236,KDU Prabodhani,Udeshika Prabodhani,Kaluwa Dewage Udeshika Prabodhani,udeshika-prabodhani,F,1985-09-20,8,rhb,lm,bowler
 335241,HHC Gunaratne,Chandima Gunaratne,Hewa Hakuru Chandima Gunaratne,chandima-gunaratne,F,1982-02-24,8,lhb,sla,
@@ -1013,6 +1148,8 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 355358,CO Taitt,Charlene Taitt,Charlene Olivia Taitt,charlene-taitt,F,1984-09-02,4,rhb,ob,
 355359,SR Taylor,Stafanie Taylor,Stafanie Roxann Taylor,stafanie-taylor,F,1991-06-11,4,rhb,ob,top-order batter
 358259,HC Knight,Heather Knight,Heather Clare Knight,heather-knight,F,1990-12-26,1,rhb,ob,middle-order batter
+359218,M Veringmeier,Miranda Veringmeier,Miranda Veringmeier,miranda-veringmeier,F,1992-07-22,15,rhb,,middle-order batter
+359220,D van Deventer,Denise van Deventer,Denise van Deventer,denise-van-deventer,F,1990-12-09,15,rhb,rm,middle-order batter
 360401,PG Raut,Punam Raut,Punam Ganesh Raut,punam-raut,F,1989-10-14,6,rhb,ob,opening batter
 361830,Mariam Hasan,Mariam Hasan,Mariam Hasan Shah,mariam-hasan,F,1985-09-19,7,rhb,rmf,
 361838,Naila Nazir,Naila Nazir,Naila Nazir,naila-nazir,F,1989-03-30,7,rhb,lb,
@@ -1052,6 +1189,7 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 381311,TM McGrath,Tahlia McGrath,Tahlia May McGrath,tahlia-mcgrath,F,1995-11-10,2,rhb,rm,allrounder
 382231,M Strano,Molly Strano,Molly Strano,molly-strano,F,1992-10-05,2,rhb,ob,bowler
 385029,JT McFadyen,Jessica McFadyen,Jessica Toihi McFadyen,jessica-mcfadyen,F,1991-10-05,5,rhb,,wicketkeeper
+385110,E Lanser,Esther Lanser,Esther Lanser,esther-lanser,F,1984-01-06,15,rhb,ob,
 386563,PS Etienne,Pearl Etienne,Pearl Sharlin Etienne,pearl-etienne,F,1982-06-07,4,rhb,rm,
 387261,A Khaka,Ayabonga Khaka,Ayabonga Khaka,ayabonga-khaka,F,1992-07-18,3,rhb,rm,bowler
 387263,A Nyiki,Akhona Nyiki,Akhona Nyiki,akhona-nyiki,F,1992-06-02,3,rhb,ob,
@@ -1060,6 +1198,10 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 388845,D Brown,Darcie Brown,Darcie R Brown,darcie-brown,F,2003-03-07,2,rhb,rf,bowler
 406463,SB Odedra,Sonia Odedra,Sonia Balu Odedra,sonia-odedra,F,1988-06-03,1,rhb,rmf,allrounder
 406468,V Gee,Valmai Gee,Valmai Gee,valmai-gee,F,1971-04-08,29,rhb,,middle-order batter
+416015,L Brouwers,Laura Brouwers,Laura Brouwers,laura-brouwers,F,1988-08-30,15,rhb,rm,
+416017,AC Mol,Alarda Mol,Alarda Catharina Mol,alarda-mol,F,1982-01-20,15,rhb,rs,
+416018,E Gerrits,Evelien Gerrits,Evelien Gerrits,evelien-gerrits,F,1985-01-17,15,rhb,rmf,
+416024,L Jack,Lorna Jack-Brown,Lorna Jack-Brown,lorna-jack-brown,F,1992-11-24,30,rhb,,wicketkeeper batter
 418420,L Delany,Laura Delany,Laura Delany,laura-delany,F,1992-12-23,29,rhb,rm,allrounder
 418422,SM Kavanagh,Shauna Kavanagh,Shauna Maire Kavanagh,shauna-kavanagh,F,1992-04-21,29,rhb,rm,middle-order batter
 418423,KJ Garth,Kim Garth,Kimberley Jennifer Garth,kim-garth,F,1996-04-25,2,rhb,rmf,allrounder
@@ -1088,10 +1230,11 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 453370,CL Tryon,Chloe Tryon,Chloe-Lesleigh  Tryon,chloe-tryon,F,1994-01-25,3,rhb,sla,allrounder
 463208,MV Waldron,Mary Waldron,Mary Veronica Waldron,mary-waldron,F,1984-05-05,29,rhb,,wicketkeeper batter
 466619,FC Wilson,Fran Wilson,Frances Claire Wilson,fran-wilson,F,1991-11-07,1,rhb,ob,middle-order batter
-469879,GL Adams,Georgia Adams,Georgia Louise Adams,georgia-adams,F,1993-10-04,1,rhb,ob,top-order batter
+469879,GL Adams,Georgia Adams,Georgia Louise Adams,georgia-adams,F,1993-10-04,1,rhb,ob,allrounder
 469884,CC Dalton,Cath Dalton,Catherine Clare Dalton,cath-dalton,F,1992-10-24,29,rhb,rf,
 469886,A Hartley,Alex Hartley,Alexandra Hartley,alex-hartley,F,1993-09-06,1,rhb,sla,bowler
 469888,BA Langston,Beth Langston,Bethany Alicia Langston,beth-langston,F,1992-09-06,1,rhb,rm,bowler
+472265,Mariska Kornet,Mariska Kornet,Mariska Kornet,mariska-kornet,F,1988-03-04,15,rhb,rmf,
 472347,JW Ogle-Thomas,June Ogle,June Whitney Ogle-Thomas,june-ogle,F,1986-09-26,4,rhb,,
 472353,SL Munroe,Subrina Munroe,Subrina Latoya Munroe,subrina-munroe,F,1985-06-11,4,rhb,rmf,
 472975,Kycia A Knight,Kycia Knight,Kycia Akira Knight,kycia-knight,F,1992-02-19,4,lhb,,wicketkeeper batter
@@ -1108,6 +1251,8 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 478808,Ritu Moni,Ritu Moni,MST. Ritu Moni,ritu-moni,F,1993-02-05,25,rhb,rm,allrounder
 482506,A Bosch,Anneke Bosch,Anneke Elizabeth Bosch,anneke-bosch,F,1993-08-17,3,rhb,rm|ob,batting allrounder
 483484,L Lee,Lizelle Lee,Lizelle Lee,lizelle-lee,F,1992-04-02,3,rhb,rmf,opening batter
+486942,N Chantham,Natthakan Chantham,Natthakan Chantham,natthakan-chantham,F,1996-01-01,156,rhb,rmf,batter
+486944,N Chaiwai,Naruemol Chaiwai,Naruemol Chaiwai,naruemol-chaiwai,F,1990-07-02,156,rhb,rm,batter
 486995,Fargana Hoque,Fargana Hoque,Fargana Hoque Pinky,fargana-hoque,F,1993-03-19,25,rhb,,top-order batter
 486997,Sultana Yesmin,Sultana Yesmin,Sultana Yesmin Boishakhi,sultana-yesmin,F,1989-08-13,25,rhb,,
 487001,Tazia Akhter,Tazia Akhter,Tazia Akhter,tazia-akhter,F,1993-12-12,25,rhb,,
@@ -1143,6 +1288,8 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 517572,L Winfield-Hill,Lauren Winfield-Hill,Lauren Winfield-Hill,lauren-winfield-hill,F,1990-08-16,1,rhb,,batter
 517577,LCN Smith,Linsey Smith,Linsey Claire Neale Smith,linsey-smith,F,1995-03-10,1,lhb,sla,bowler
 526972,EJ Tice,Elena Tice,Elena Joy Tice,elena-tice,F,1997-11-16,29,rhb,lb,
+526975,LK Bennett,Leonie Bennett,Leonie Kelly Bennett,leonie-bennett,F,1993-12-08,15,rhb,sla,
+526987,PA Chatterji,Priyanaz Chatterji,Priyanaz Anjum Chatterji,priyanaz-chatterji,F,1993-08-12,30,rhb,rm,allrounder
 527656,SL Quintyne,Shaquana Quintyne,Shaquana Latish Quintyne,shaquana-quintyne,F,1996-01-03,4,rhb,lb,
 530139,AK Peters,Akeira Peters,Akeira Kay Peters,akeira-peters,F,1993-09-30,4,lhb,lm,
 530153,F Walters,Felicia Walters,Felicia Walters,felicia-walters,F,1992-01-06,4,rhb,rsm,
@@ -1176,11 +1323,15 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 572645,Aliya Riaz,Aliya Riaz,Aliya Riaz,aliya-riaz,F,1992-09-24,7,rhb,rm,allrounder
 572648,Javeria Rauf,Javeria Rauf,Javeria Rauf,javeria-rauf,F,1989-04-10,7,rhb,rfm,
 577190,Nuzhat Tasnia,Nuzhat Tasnia,Nuzhat Tasnia,nuzhat-tasnia,F,1996-12-31,25,rhb,,wicketkeeper batter
+577317,KL Gordon,Kirstie Gordon,Kirstie Louise Gordon,kirstie-gordon,F,1997-10-20,30,rhb,sla,bowler
+577359,HDJ Siegers,Heather Siegers,Heather Diantha Jan Siegers,heather-siegers,F,1996-10-10,15,rhb,ob,allrounder
 578114,NK Crafton,Nerissa Crafton,Nerissa Kershara Crafton,nerissa-crafton,F,1998-07-23,4,lhb,lm,middle-order batter
 578451,AA Patil,Anuja Patil,Anuja Arun Patil,anuja-patil,F,1992-06-28,6,rhb,ob,bowler
 578454,RK Parwin,Rasanara Parwin,Rasanara Kephatulla Parwin,rasanara-parwin,F,1992-05-04,6,rhb,ob,
 580663,NE Farrant,Tash Farrant,Natasha Eleni Farrant,tash-farrant,F,1996-05-29,1,lhb,lm,bowler
 581029,Shaila Sharmin,Shaila Sharmin,Shaila Sharmin,shaila-sharmin,F,1989-07-16,25,rhb,ob,
+587145,C Sutthiruang,Chanida Sutthiruang,Chanida Sutthiruang,chanida-sutthiruang,F,1993-07-16,156,rhb,rm,allrounder
+587146,S Laomi,Suleeporn Laomi,Suleeporn Laomi,suleeporn-laomi,F,1998-01-22,156,rhb,lb,bowler
 592588,NE Stalenberg,Naomi Stalenberg,Naomi Elizabeth Stalenberg,naomi-stalenberg,F,1994-04-18,2,rhb,rm,allrounder
 592593,AN Kelly,Arlene Kelly,Arlene Nora Kelly,arlene-kelly,F,1994-01-08,29,rhb,rm,allrounder
 592594,PM Inglis,Polly Inglis,Polly Margot Inglis,polly-inglis,F,1996-05-31,5,rhb,rm,wicketkeeper batter
@@ -1236,7 +1387,11 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 769427,RS Williams,Rashada Williams,Rashada Shieka Williams,rashada-williams,F,1997-02-23,4,rhb,,wicketkeeper batter
 769485,Q Joseph,Qiana Joseph,Qiana Joseph,qiana-joseph,F,2001-01-22,4,lhb,sla,allrounder
 769517,K Ramharack,Karishma Ramharack,Karishma Ramharack,karishma-ramharack,F,1995-01-20,4,lhb,ob,bowler
+774311,SL Kalis,Sterre Kalis,Sterre Laurien Kalis,sterre-kalis,F,1999-08-30,15,rhb,rm,top-order batter
+774313,AJ Drummond,Annette Drummond,Annette J Drummond,annette-drummond,F,1984-10-21,30,rhb,ob,
+774317,J Post,Juliët Post,Juliët Post,juli-t-post,F,1997-12-26,15,rhb,rm,
 774347,GH Lewis,Gaby Lewis,Gaby Hollis Lewis,gaby-lewis,F,2001-03-27,29,rhb,lb,allrounder
+774353,AH Thomson,Annemijn Thomson,Annemijn Hedwig Thomson,annemijn-thomson,F,1996-01-26,15,rhb,lb,
 792135,C Raack,Celeste Raack,Celeste Raack,celeste-raack,F,1994-05-18,29,rhb,lb,
 798119,TS Hasabnis,Tejal Hasabnis,Tejal Sanjay Hasabnis,tejal-hasabnis,F,1997-08-16,6,rhb,ob,middle-order batter
 799389,SK Yadav,Soni Yadav,Soni Kamlesh Yadav,soni-yadav,F,1994-03-25,6,rhb,rm,
@@ -1244,10 +1399,14 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 805059,IR James,Bella James,Isabella Rose James,bella-james,F,1999-01-27,5,rhb,,top-order batter
 858809,A Gardner,Ashleigh Gardner,Ashleigh Katherine Gardner,ashleigh-gardner,F,1997-04-15,2,rhb,ob,allrounder
 858811,L Cheatle,Lauren Cheatle,Lauren Roma Cheatle,lauren-cheatle,F,1998-11-06,2,lhb,lfm,bowler
+872217,TG Norris,Tara Norris,Tara G Norris,tara-norris,F,1998-06-04,11,lhb,lm,bowler
 874173,MK Villiers,Mady Villiers,Mady Kate Villiers,mady-villiers,F,1998-08-26,1,rhb,ob,bowling allrounder
+874233,KC Thompson,Katie Thompson,Katie Cordelia Thompson,katie-thompson,F,1996-09-28,27,,,
 874277,BF Smith,Bryony Smith,Bryony Frances Smith,bryony-smith,F,1997-11-12,1,rhb,ob,allrounder
 874293,EL Arlott,Em Arlott,Emily Louise Arlott,em-arlott,F,1998-02-23,1,rhb,rm,bowler
 874317,RA Lewis,Robyn Lewis,Robyn Allana Lewis,robyn-lewis,F,1999-07-21,29,rhb,sla,
+877469,R Rijke,Robine Rijke,Robine Rijke,robine-rijke,F,1996-09-01,15,rhb,rm,allrounder
+877473,B de Leede,Babette de Leede,Babette Johanna Adriana de Leede,babette-de-leede,F,1999-10-08,15,rhb,,wicketkeeper batter
 878025,LK Bell,Lauren Bell,Lauren Katie Bell,lauren-bell,F,2001-01-02,1,rhb,rfm,bowler
 878039,S Ecclestone,Sophie Ecclestone,Sophie Ecclestone,sophie-ecclestone,F,1999-05-06,1,rhb,sla,bowler
 879369,KL George,Katie George,Katie Louise George,katie-george,F,1999-04-07,1,rhb,lm,bowler
@@ -1261,8 +1420,11 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 885837,S Glenn,Sarah Glenn,Sarah Glenn,sarah-glenn,F,1999-08-27,1,rhb,lb,bowling allrounder
 886203,DR Gibson,Dani Gibson,Danielle Rose Gibson,dani-gibson,F,2001-04-30,1,rhb,rm,bowling allrounder
 907733,M Mangru,Mandy Mangru,Mandy Mangru,mandy-mangru,F,1999-09-22,4,rhb,ob,wicketkeeper
-908047,R Boyce,Reniece Boyce,Reniece Boyce,reniece-boyce,F,1997-09-03,4,rhb,,
+908047,R Boyce,Reniece Boyce,Reniece Boyce,reniece-boyce,F,1997-09-03,4,rhb,,top-order batter
 909779,SS Grimmond,Sheneta Grimmond,Sheneta Shanata Grimmond,sheneta-grimmond,F,1998-08-09,4,rhb,ob,bowler
+914675,KE Bryce,Kathryn Bryce,Kathryn Emma Bryce,kathryn-bryce,F,1997-11-17,30,rhb,rm,allrounder
+914677,SJ Bryce,Sarah Bryce,Sarah Jennifer Bryce,sarah-bryce,F,2000-01-08,30,rhb,,wicketkeeper batter
+914839,C de Lange,Caroline de Lange,Caroline de Lange,caroline-de-lange,F,1998-07-27,15,rhb,lbg,bowler
 915489,Ayesha Zafar,Ayesha Zafar,Ayesha Zafar,ayesha-zafar,F,1994-09-09,7,rhb,ob|lb,opening batter
 916037,BAM Heath,Bess Heath,Bess Alice May Heath,bess-heath,F,2001-08-20,1,rhb,,wicketkeeper
 922481,L Wolvaardt,Laura Wolvaardt,Laura Wolvaardt,laura-wolvaardt,F,1999-04-26,3,rhb,,opening batter
@@ -1276,6 +1438,7 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 924289,S Nisansala,Sachini Nisansala,Sachini Nisansala,sachini-nisansala,F,2001-11-11,8,lhb,sla,bowler
 924291,I Dulani,Imesha Dulani,Imesha Dulani Witharana,imesha-dulani,F,2002-01-20,8,rhb,,batter
 931667,E Tshuma,Ellen Tshuma,Ellen Tshuma,ellen-tshuma,F,1996-01-30,9,,,
+934494,AM Maqsood,Abtaha Maqsood,Abtaha Mahin Maqsood,abtaha-maqsood,F,1999-06-11,30,rhb,lb,bowler
 939229,TS Sekhukhune,Tumi Sekhukhune,Tumi Sphindile Sekhukhune,tumi-sekhukhune,F,1998-11-21,3,lhb,rm,bowler
 939249,N de Klerk,Nadine de Klerk,Nadine de Klerk,nadine-de-klerk,F,2000-01-16,3,rhb,rm,allrounder
 939253,D Tucker,Delmi Tucker,Delmi Tucker,delmi-tucker,F,1997-03-05,3,rhb,ob,allrounder
@@ -1289,10 +1452,16 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 941805,Aiman Anwer,Aiman Anwer,Aiman Anwer,aiman-anwer,F,1991-09-14,7,rhb,rmf,bowler
 941809,Waheeda Akhtar,Waheeda Akhtar,Waheeda Akhtar,waheeda-akhtar,F,1995-04-10,7,rhb,rmf,bowler
 941933,N Shangase,Nondumiso Shangase,Nondumiso Shangase,nondumiso-shangase,F,1996-04-05,3,rhb,ob,batting allrounder
+944283,O Kamchomphu,Onnicha Kamchomphu,Onnicha Kamchomphu,onnicha-kamchomphu,F,1997-12-25,156,rhb,ob,allrounder
+944285,N Koncharoenkai,Nannapat Koncharoenkai,Nannapat Koncharoenkai,nannapat-koncharoenkai,F,2000-09-11,156,rhb,,wicketkeeper
+944345,T Ruma,Tanya Ruma,Tanya Ruma,tanya-ruma,F,1993-05-25,20,rhb,rm,
+944349,B Tau,Brenda Tau,Brenda Hoi Tau,brenda-tau,F,1998-06-17,20,lhb,,wicketkeeper
+944351,M Tom,Mairi Tom,Mairi Tom,mairi-tom,F,1986-06-28,20,rhb,rm,
+944357,S Jimmy,Sibona Jimmy,Sibona Lucy Jimmy,sibona-jimmy,F,1992-12-29,20,lhb,ob,
 944373,S Molineux,Sophie Molineux,Sophie Molineux,sophie-molineux,F,1998-01-17,2,lhb,sla,bowling allrounder
 944393,AM King,Alana King,Alana Maria King,alana-king,F,1995-11-22,2,rhb,lb,bowling allrounder
 944417,B Vakarewa,Belinda Vakarewa,Belinda Vakarewa,belinda-vakarewa,F,1998-01-22,2,rhb,rfm,bowler
-946057,G Wareham,Georgia Wareham,Georgia Wareham,georgia-wareham,F,1999-05-26,2,rhb,lb,bowler
+946057,G Wareham,Georgia Wareham,Georgia Lee Wareham,georgia-wareham,F,1999-05-26,2,rhb,lb,bowling allrounder
 960673,K Anjali Sarvani,Anjali Sarvani,Kesavarajugari Anjali Sarvani,anjali-sarvani,F,1997-08-28,6,lhb,lm,bowler
 960695,U Chetry,Uma Chetry,Uma Chetry,uma-chetry,F,2002-07-27,6,rhb,,wicketkeeper batter
 960715,YH Bhatia,Yastika Bhatia,Yastika Harish Bhatia,yastika-bhatia,F,2000-11-01,6,lhb,,wicketkeeper batter
@@ -1312,51 +1481,87 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 966965,BG Armstrong,Bella Armstrong,Bella Grace Armstrong,bella-armstrong,F,1999-11-16,5,rhb,rm,batting allrounder
 971203,N Mlaba,Nonkululeko Mlaba,Nonkululeko Mlaba,nonkululeko-mlaba,F,2000-06-27,3,rhb,sla,bowler
 1022077,ME Bouchier,Maia Bouchier,Maia Emily Bouchier,maia-bouchier,F,1998-12-05,1,rhb,rm,top-order batter
+1022083,SNL Siegers,Silver Siegers,Silver Naara Louise Siegers,silver-siegers,F,2000-02-14,15,rhb,lb,bowler
 1026403,L Paul,Leah Paul,Leah Paul,leah-paul,F,1999-09-10,29,lhb,sla,allrounder
 1026413,L Maritz,Lara Maritz,Lara Maritz,lara-maritz,F,2001-01-07,29,rhb,rm,bowler
+1034887,K Oala,Konio Oala,Konio Hera Oala,konio-oala,F,1996-08-26,20,rhb,ob,
 1039421,CE Dean,Charlie Dean,Charlotte Ellen Dean,charlie-dean,F,2000-12-22,1,rhb,ob,bowling allrounder
 1051217,Suraiya Azmin,Suraiya Azmin,Suraiya Azmin,suraiya-azmin,F,1999-05-29,25,rhb,rm,bowler
 1051219,Jannatul Ferdus,Jannatul Ferdus,Most Jannatul Ferdus Sumona,jannatul-ferdus,F,1999-12-12,25,rhb,ob,bowler
 1054103,AGC Vimukthi,Chethana Vimukthi,Aluth Gedara Chethana Vimukthi,chethana-vimukthi,F,2002-01-10,8,rhb,rmf,bowler
+1060604,R Kanoh,Rosenan Kanoh,Rosenan Kanoh,rosenan-kanoh,F,1999-05-13,156,rhb,ob,allrounder
 1068284,NH Patel,Nensi Patel,Nensi Hiteshkumar Patel,nensi-patel,F,2002-05-27,5,rhb,ob,allrounder
 1068933,JM Kerr,Jess Kerr,Jessica Mackenzie Kerr,jess-kerr,F,1998-01-18,5,rhb,rm,bowler
 1071705,A Sutherland,Annabel Sutherland,Annabel Sutherland,annabel-sutherland,F,2001-10-12,2,rhb,rmf,allrounder
 1071711,TJ Vlaeminck,Tayla Vlaeminck,Tayla Jade Vlaeminck,tayla-vlaeminck,F,1998-10-27,2,rhb,rf,bowler
 1074203,KA Heffernan,Kate Heffernan,Kate A Heffernan,kate-heffernan,F,,5,,,
+1080010,V Araa,Vicky Araa,Vicky Araa,vicky-araa,F,1996-06-26,20,rhb,ob,
 1080011,Ghulam Fatima,Ghulam Fatima,Ghulam Fatima,ghulam-fatima,F,1995-10-05,7,rhb,lb,bowler
 1080012,N Sibanda,Nomvelo Sibanda,Nomvelo Sibanda,nomvelo-sibanda,F,1996-11-21,9,lhb,lm,bowler
 1080264,Murshida Khatun,Murshida Khatun,Murshida Khatun,murshida-khatun,F,1999-07-07,25,lhb,,opening batter
+1093308,GP Tom,Geua Tom,Geua Pauke Tom,geua-tom,F,1995-10-06,20,rhb,rm,
 1094714,CT Dhururu,Chiedza Dhururu,Chiedza Teresia Dhururu,chiedza-dhururu,F,1996-01-04,9,rhb,,wicketkeeper
 1094716,Rachel Delaney,Rachel Delaney,Rachel Delaney,rachel-delaney,F,1997-05-05,29,rhb,ob,allrounder
 1094717,R Stokell,Rebecca Stokell,Rebecca Stokell,rebecca-stokell,F,2000-03-13,29,rhb,rfm|rm,batter
 1094718,L Little,Louise Little,Louise Little,louise-little,F,2003-05-16,29,rhb,rm,bowler
 1094719,A Beggs,Aoife Beggs,Aoife Beggs,aoife-beggs,F,1999-10-23,29,rhb,rm,
 1094720,S MacMahon,Sophie MacMahon,Sophie MacMahon,sophie-macmahon,F,1997-01-29,29,rhb,rm,allrounder
-1119417,F Chipare,Francisca Chipare,Francisca Chipare,francisca-chipare,F,1998-10-01,9,rhb,rm,
+1095815,J van Vliet,Jolien van Vliet,Jolien van Vliet,jolien-van-vliet,F,1998-07-24,15,rhb,,
+1095834,HRA Rainey,Hannah Rainey,Hannah R A Rainey,hannah-rainey,F,1997-06-02,30,rhb,rm,bowler
+1097998,EL Watson,Ellen Watson,Ellen Lily Watson,ellen-watson,F,2000-03-10,30,rhb,,wicketkeeper batter
+1100293,EC Claridge,Ella Claridge,Ella C Claridge,ella-claridge,F,2002-09-28,11,rhb,rm,allrounder
+1119417,F Chipare,Francisca Chipare,Francisca Chipare,francisca-chipare,F,1998-10-01,9,rhb,rm,bowler
 1125059,Natalia Pervaiz,Natalia Pervaiz,Natalia Pervaiz,natalia-pervaiz,F,1995-12-25,7,rhb,rm,batting allrounder
+1126416,ER Oza,Esha Oza,Esha Rohit Oza,esha-oza,F,1998-01-08,27,rhb,ob,batting allrounder
+1126428,UCKA Dona,Udeni Dona,Udeni Chathurika Kuruppu Arachcige Dona,udeni-dona,F,1993-03-12,27,lhb,rsm,
 1128781,HJ Darlington,Hannah Darlington,Hannah Joy Darlington,hannah-darlington,F,2002-01-25,2,rhb,rm,bowler
 1135025,L Phiri,Loryn Phiri,Loryn Ntandoyenkosi Munashe Phiri,loryn-phiri,F,1998-11-04,9,rhb,ob,bowler
 1135028,C Murray,Cara Murray,Cara Murray,cara-murray,F,2000-11-01,29,rhb,lb,bowler
+1137522,MD Botha,Michelle Botha,Michelle Daleen Botha,michelle-botha,F,1994-08-04,27,rhb,sla,
 1137543,E Marx,Eliz-Mari Marx,Eliz-Mari Marx,eliz-mari-marx,F,2003-01-20,3,rhb,rm,bowler
 1142969,TB Wilson,Tahlia Wilson,Tahlia Beverly Wilson,tahlia-wilson,F,1999-10-21,2,rhb,rm,wicketkeeper batter
 1142970,S Campbell,Stella Campbell,Stella Rae Campbell,stella-campbell,F,2002-06-15,2,rhb,rm,bowler
+1142972,S Horley,Saskia Horley,Saskia Horley,saskia-horley,F,2000-02-23,30,rhb,ob,allrounder
 1144870,Gull Feroza,Gull Feroza,Gull Feroza,gull-feroza,F,1998-12-28,7,rhb,,wicketkeeper batter
 1144881,Rameen Shamim,Rameen Shamim,Rameen Shamim,rameen-shamim,F,1996-01-19,7,lhb,ob,bowler
 1144884,Saba Nazir,Saba Nazir,Saba Nazir,saba-nazir,F,1992-11-01,7,rhb,ob,bowler
 1144886,Fatima Sana,Fatima Sana,Fatima Sana,fatima-sana,F,2001-11-08,7,rhb,rm,bowling allrounder
 1145089,S Mostary,Sobhana Mostary,Sobhana Mostary,sobhana-mostary,F,2002-02-13,25,rhb,ob,middle-order batter
+1146027,M McColl,Megan McColl,Megan McColl,megan-mccoll,F,2000-11-15,30,rhb,rm,middle-order batter
 1146066,IECM Wong,Issy Wong,Isabelle Eleanor Chih Ming Wong,issy-wong,F,2002-05-15,1,rhb,rfm,bowler
 1146129,L Filer,Lauren Filer,Lauren Louise Filer,lauren-filer,F,2000-12-22,1,rhb,rf,bowler
+1146661,K Fraser,Katherine Fraser,Katherine Fraser,katherine-fraser,F,2005-04-09,30,rhb,ob,allrounder
+1146665,AS van Beuge,Annemijn van Beuge,Annemijn S van Beuge,annemijn-van-beuge,F,2001-09-25,15,rhb,rm,
+1148032,EN Lynch,Eva Lynch,Eva Nynke Lynch,eva-lynch,F,2000-01-16,15,rhb,ob,
+1150575,H Hotchandani,Heena Hotchandani,Heena Hotchandani,heena-hotchandani,F,2000-10-22,27,lhb,sla,
+1150581,I Toua,Isabel Toua,Isabel Toua,isabel-toua,F,1995-07-17,20,rhb,rm,
+1150582,N Vare,Naoani Vare,Naoani Vare,naoani-vare,F,1998-05-28,20,rhb,rm,
 1150585,O Prendergast,Orla Prendergast,Orla Prendergast,orla-prendergast,F,2002-06-01,29,rhb,rmf|rm,allrounder
 1163087,A Dercksen,Annerie Dercksen,Annerie Dercksen,annerie-dercksen,F,2001-04-26,3,rhb,rm,allrounder
 1167624,L Jones,Leah Jones,Leah Jones,leah-jones,F,2002-03-07,3,rhb,rm,
 1169661,EJ Carson,Eden Carson,Eden Jean Carson,eden-carson,F,2001-08-08,5,rhb,ob,bowler
 1171227,C Mzembe,Chiedza Mzembe,Chiedza Mzembe,chiedza-mzembe,F,2002-01-16,9,,,
+1171428,S Khiaoto,Suwanan Khiaoto,Suwanan Khiaoto,suwanan-khiaoto,F,2004-06-19,156,rhb,,wicketkeeper
+1171429,P Maya,Phannita Maya,Phannita Maya,phannita-maya,F,2004-06-15,156,rhb,rm,allrounder
+1171432,S Chaturongrattana,Sunida Chaturongrattana,Sunida Chaturongrattana,sunida-chaturongrattana,F,2004-01-22,156,rhb,ob,bowler
 1171433,M Gaur,Mahika Gaur,Mahika Gaur,mahika-gaur,F,2006-03-09,1,rhb,lfm,bowling allrounder
+1171484,T Putthawong,Thipatcha Putthawong,Thipatcha Putthawong,thipatcha-putthawong,F,2004-03-07,156,lhb,sla,bowler
+1171544,Vaishnave Mahesh,Vaishnave Mahesh,Vaishnave Mahesh,vaishnave-mahesh,F,2006-12-13,27,rhb,lb,allrounder
+1171666,S Kotte,Suraksha Kotte,Suraksha Kotte,suraksha-kotte,F,2003-02-13,27,rhb,ob,bowler
+1171937,S Dharnidharka,Samaira Dharnidharka,Samaira Dharnidharka,samaira-dharnidharka,F,2007-02-27,27,rhb,rm,allrounder
 1176132,P Litchfield,Phoebe Litchfield,Phoebe Litchfield,phoebe-litchfield,F,2003-04-18,2,lhb,lb,batter
-1182523,Shafali Verma,Shafali Verma,Shafali Verma,shafali-verma,F,2004-01-28,6,rhb,ob,opening batter
+1182523,Shafali Verma,Shafali Verma,Shafali Verma,shafali-verma,F,2004-01-28,6,rhb,ob,allrounder
+1182774,E Pokana,Erani Pokana,Erani Pokana,erani-pokana,F,2004-10-27,20,lhb,lm,
+1182776,HJ Thomas,Henao Thomas,Henao Jean Thomas,henao-thomas,F,2002-03-06,20,rhb,ob,
 1184099,HL Baker,Hannah Baker,Hannah L Baker,hannah-baker,F,2004-02-03,1,rhb,lb,bowler
-1184176,J Grewcock,Jodi Grewcock,Jodi Grewcock,jodi-grewcock,F,,1,lhb,lbg,batting allrounder
+1184105,HWA Landheer,Hannah Landheer,Hannah Wilhelmina Adriana Landheer,hannah-landheer,F,2002-10-20,15,rhb,rm,bowler
+1184173,A Lister,Ailsa Lister,Ailsa Lister,ailsa-lister,F,2004-04-08,30,rhb,,wicketkeeper batter
+1184176,J Grewcock,Jodi Grewcock,Jodi Grewcock,jodi-grewcock,F,2004-12-30,1,lhb,lbg,batting allrounder
+1184190,GDMO Bloemen,Gwendolyn Bloemen,Gwendoly Delphine Maria Octavia Bloemen,gwendolyn-bloemen,F,2003-07-24,15,rhb,rm,
+1184545,G Kodali,Geetika Kodali,Geetika Kodali,geetika-kodali,F,2004-06-07,11,rhb,rm,allrounder
+1184969,RE Slater,Rachel Slater,Rachel Elizabeth Slater,rachel-slater,F,2001-11-20,30,rhb,lm,bowler
+1185795,IJR Zwilling,Iris Zwilling,Iris Jeane Regine Zwilling,iris-zwilling,F,2001-09-08,15,rhb,rm,allrounder
+1185796,F Overdijk,Frederique Overdijk,Frederique Overdijk,frederique-overdijk,F,2000-12-04,15,rhb,rm,allrounder
 1187119,R MacDonald-Gay,Ryana MacDonald-Gay,Ryana Lucelle MacDonald-Gay,ryana-macdonald-gay,F,2004-02-12,1,rhb,rm,allrounder
 1187120,A Capsey,Alice Capsey,Alice Capsey,alice-capsey,F,2004-08-11,1,rhb,ob,batting allrounder
 1195124,Fariha Trisna,Fariha Trisna,Fariha Islam Trisna,fariha-trisna,F,2002-09-13,25,rhb,lm,bowler
@@ -1395,6 +1600,7 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 1229023,S Forbes,Sarah Forbes,Sarah Forbes,sarah-forbes,F,2002-08-16,29,rhb,,top-order batter
 1230583,KC Schultz,Kaysia Schultz,Kaysia Christina Schultz,kaysia-schultz,F,1997-04-17,4,rhb,sla,bowler
 1232213,CE Coulter Reilly,Christina Coulter Reilly,Christina E Coulter Reilly,christina-coulter-reilly,F,2003-08-17,29,rhb,,wicketkeeper
+1236784,C Abel,Chloe Abel,Chloe Grace Abel,chloe-abel,F,2003-12-03,30,rhb,rm,bowler
 1237996,A Soni,Ayushi Soni,Ayushi Soni,ayushi-soni,F,2000-09-30,6,rhb,rm,allrounder
 1238006,KS Gautam,Kashvee Gautam,Kashvee Sudesh Gautam,kashvee-gautam,F,2003-04-18,6,rhb,rm,bowler
 1239671,MM Penfold,Molly Penfold,Molly Mae Penfold,molly-penfold,F,2001-06-15,5,rhb,rm,bowler
@@ -1411,14 +1617,23 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 1255560,KS Ahuja,Kanika Ahuja,Kanika S Ahuja,kanika-ahuja,F,2002-08-07,6,lhb,ob,allrounder
 1255629,Raghvi Bist,Raghvi Bist,Raghvi Anand Bist,raghvi-bist,F,2004-10-11,6,rhb,rmf,allrounder
 1268281,Zaida James,Zaida James,Zaida Amiya James,zaida-james,F,2004-10-30,4,lhb,sla,allrounder
-1268602,J Glasgow,Jannillea Glasgow,Jannillea Glasgow,jannillea-glasgow,F,2004-01-05,4,lhb,rfm,bowler
+1268602,J Glasgow,Jannillea Glasgow,Jannillea Glasgow,jannillea-glasgow,F,2004-01-05,4,lhb,rfm,allrounder
+1271055,I van der Woning,Isabel van der Woning,Isabel van der Woning,isabel-van-der-woning,F,2001-11-11,15,rhb,rm,bowler
 1273947,M Mavunga,Michelle Mavunga,Michelle Mavunga,michelle-mavunga,F,2004-12-31,9,rhb,rmf,bowling allrounder
+1273950,A Suwanchonrathi,Aphisara Suwanchonrathi,Aphisara Suwanchonrathi,aphisara-suwanchonrathi,F,2007-03-29,156,rhb,rm,allrounder
 1277198,SA Smale,Seren Smale,Seren Anna Smale,seren-smale,F,2004-12-13,1,rhb,,wicketkeeper batter
+1283435,A Kolan,Anika Kolan,Anika Kolan,anika-kolan,F,2006-08-18,11,rhb,,wicketkeeper batter
+1283436,C Prasad,Chetnaa Prasad,Chetnaa Prasad,chetnaa-prasad,F,2005-09-14,11,rhb,,
+1283437,GC Bhogle,Gargi Bhogle,Gargi Chandrakant Bhogle,gargi-bhogle,F,2003-04-20,11,lhb,ob,
+1283439,IM Vaghela,Isani Vaghela,Isani Mahesh Vaghela,isani-vaghela,F,2006-01-07,11,rhb,rm,allrounder
+1283450,SR Thadani,Suhani Thadani,Suhani Rajiv Thadani,suhani-thadani,F,2006-08-02,11,rhb,rm,bowler
 1289557,Pratika Rawal,Pratika Rawal,Pratika Rawal,pratika-rawal,F,2000-09-01,6,rhb,ob,opening batter
 1289676,NSS Sharma,Nandani Sharma,Nandani Shyam Sunder Sharma,nandani-sharma,F,2001-09-20,6,rhb,rfm,bowler
+1289936,B Leephatthana,Banthida Leephatthana,Banthida Leephatthana,banthida-leephatthana,F,2006-07-20,156,rhb,,
 1289948,SR Patil,Shreyanka Patil,Shreyanka Rajesh Patil,shreyanka-patil,F,2002-07-31,6,rhb,ob,allrounder
 1289983,KP Navgire,Kiran Navgire,Kiran Prabhu Navgire,kiran-navgire,F,1994-09-18,6,rhb,,middle-order batter
 1290105,RMVD Gunaratne,Vishmi Gunaratne,Rajapaksha Mudiyanselage Vishmi Dewmini Gunarathne,vishmi-gunaratne,F,2005-08-22,8,rhb,rmf,batter
+1290388,Theertha Satish,Theertha Satish,Theertha Satish,theertha-satish,F,2004-04-16,27,lhb,,wicketkeeper batter
 1294098,IG Sharp,Izzy Sharp,Izzy Sharp,izzy-sharp,F,2004-12-01,5,rhb,,top-order batter
 1302575,K Chigora,Kudzai Chigora,Kudzai Chigora,kudzai-chigora,F,2006-08-06,9,rhb,rfm,bowler
 1302686,B Biza,Beloved Biza,Beloved Biza,beloved-biza,F,2009-01-05,9,rhb,ob,allrounder
@@ -1429,17 +1644,32 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 1302729,NL Mtomba,Natasha Mtomba,Natasha Lwandile Mtomba,natasha-mtomba,F,2004-11-17,9,rhb,,batter
 1302733,L Mabhero,Lindokuhle Mabhero,Lindokuhle Mabhero,lindokuhle-mabhero,F,2003-03-22,9,rhb,ob,bowler
 1303068,VM Mutungwindu,Vimbai Mutungwindu,Vimbai Mary Mutungwindu,vimbai-mutungwindu,F,2005-06-11,9,rhb,,wicketkeeper batter
+1306435,L Keny,Lavanya Keny,Lavanya Keny,lavanya-keny,F,2006-11-21,27,rhb,ob,batting allrounder
+1306436,Rinitha Rajith,Rinitha Rajith,Rinitha Rajith,rinitha-rajith,F,2006-01-13,27,rhb,rmf,allrounder
+1306437,S Gokhale,Siya Gokhale,Siya Swarup Gokhale,siya-gokhale,F,2005-08-15,27,rhb,rmf,bowling allrounder
+1306438,I Nandakumar,Indhuja Nandakumar,Indhuja Nandakumar,indhuja-nandakumar,F,2006-04-29,27,rhb,rmf,bowling allrounder
 1306917,C Mutasa,Christine Mutasa,Christine Mutasa,christine-mutasa,F,2009-01-09,9,rhb,lm,allrounder
 1315572,Sadaf Shamas,Sadaf Shamas,Sadaf Shamas,sadaf-shamas,F,1998-12-30,7,rhb,rm,top-order batter
+1318485,Nanthita Boonsukham,Nanthita Boonsukham,Nanthita Boonsukham,nanthita-boonsukham,F,2005-07-24,156,rhb,lb,bowler
 1321015,HDRS Silva,Rashmi Silva,Hanthana Dewage Rashmi Sewandi Silva,rashmi-silva,F,2000-12-04,8,rhb,lb,bowler
 1321016,Kaushini Nuthyangana,Kaushini Nuthyangana,Edirisooriya Mohottilage Kaushini Nuthyanga Heram Senavirathna,kaushini-nuthyangana,F,2002-08-05,8,rhb,,wicketkeeper batter
+1323119,D Lohia,Dika Lohia,Dika Lohia,dika-lohia,F,2006-10-08,20,rhb,ob,
+1323123,HL Tau,Hane Tau,Hane Lohia Tau,hane-tau,F,2004-01-02,20,lhb,sla,
+1323128,MN Ani,Melanie Ani,Melanie Nadea Ani,melanie-ani,F,2004-12-12,20,rhb,rm,
+1323130,V Buruka,Vicky Buruka,Vicky Buruka,vicky-buruka,F,2004-06-06,20,lhb,rm,
 1325395,Shaunte Carrington,Shaunte Carrington,Shaunte Carrington,shaunte-carrington,F,2000-08-14,4,rhb,ob,bowler
 1325396,T Holder,Trishan Holder,Trishan Holder,trishan-holder,F,2003-11-08,4,rhb,rm,allrounder
 1325398,A Scantlebury,Alisa Scantlebury,Alisa Scantlebury,alisa-scantlebury,F,2003-05-28,4,rhb,,middle-order batter
 1325401,A Williams,Aaliyah Williams,Aaliyah Williams,aaliyah-williams,F,1998-02-28,4,rhb,rm,allrounder
+1330788,RM van Oosterom,Robyn van Oosterom,Robyn Marie van Oosterom,robyn-van-oosterom,F,2004-08-09,15,rhb,sla,
 1331328,K Reyneke,Kayla Reyneke,Kayla Reyneke,kayla-reyneke,F,2005-10-21,3,rhb,ob,batting allrounder
 1331329,S Naidu,Seshnie Naidu,Seshnie Naidu,seshnie-naidu,F,2006-01-05,3,rhb,lb,allrounder
+1331887,D Dhingra,Disha Dhingra,Disha Dhingra,disha-dhingra,F,2006-12-07,11,rhb,rm,opening batter
+1331889,RP Singh,Ritu Singh,Ritu Priya Singh,ritu-singh,F,2006-03-08,11,rhb,ob,allrounder
 1332561,Marufa Akter,Marufa Akter,Marufa Akter,marufa-akter,F,2005-01-01,25,rhb,rmf,bowler
+1332575,K Frank,Kevau Frank,Kevau Frank,kevau-frank,F,2000-11-18,20,rhb,,
+1332610,O Bell,Olivia Bell,Olivia Bell,olivia-bell,F,2003-11-12,30,rhb,ob,allrounder
+1335141,H Doriga,Hollan Doriga,Hollan Doriga,hollan-doriga,F,2003-08-30,20,lhb,rm,
 1340108,K Meso,Karabo Meso,Karabo Meso,karabo-meso,F,2007-09-18,3,rhb,,wicketkeeper batter
 1340525,C Pavely,Charis Pavely,Charis Pavely,charis-pavely,F,2004-10-24,1,lhb,sla,allrounder
 1341174,Umm-e-Hani,Umm-e-Hani,Umm-e-Hani,umm-e-hani,F,1996-08-12,7,rhb,ob,bowler
@@ -1453,8 +1683,14 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 1351943,JR Loughran,Joanna Loughran,Joanna Roisin Loughran,joanna-loughran,F,2004-08-25,29,rhb,,wicketkeeper batter
 1351945,AK Maguire,Aimee Maguire,Aimee Kate Maguire,aimee-maguire,F,2006-09-09,29,rhb,sla,bowler
 1351946,KJ McCartney,Kia McCartney,Kia Jo McCartney,kia-mccartney,F,2005-03-16,29,rhb,ob,allrounder
+1352080,AI Chudasama,Aditiba Chudasama,Aditiba Indrajitsinh Chudasama,aditiba-chudasama,F,2006-05-26,11,rhb,ob,allrounder
+1352081,JL Aras,Jivana Aras,Jivana Lee Aras,jivana-aras,F,2004-03-27,11,lhb,rm,allrounder
+1352082,Pooja Ganesh,Pooja Ganesh,Pooja Ganesh,pooja-ganesh,F,2008-01-04,11,rhb,,wicketkeeper batter
 1352091,Eyman Fatima,Eyman Fatima,Eyman Fatima,eyman-fatima,F,2004-10-12,7,rhb,rm,batter
 1352113,Shawaal Zulfiqar,Shawaal Zulfiqar,Shawaal Zulfiqar,shawaal-zulfiqar,F,2005-06-27,7,rhb,ob,batter
+1352119,DEM Carter,Darcey Carter,Darcey Elizabeth Morris Carter,darcey-carter,F,2005-05-31,30,rhb,ob,allrounder
+1352120,M Faisal,Maryam Faisal,Maryam Faisal,maryam-faisal,F,2005-07-07,30,rhb,lb,wicketkeeper batter
+1352130,NM Sheikh,Nayma Sheikh,Nayma Mughis Sheikh,nayma-sheikh,F,2006-03-04,30,lhb,rfm|lb,allrounder
 1352168,A Munisar,Ashmini Munisar,Ashmini Munisar,ashmini-munisar,F,2003-12-07,4,rhb,ob,allrounder
 1352170,RMAU Grimmond,Realeanna Grimmond,Realeanna Margot Ann U Grimmond,realeanna-grimmond,F,2005-02-24,4,rhb,rm,allrounder
 1352172,JKC Claxton,Jahzara Claxton,Jahzara Keanna Chloe Claxton,jahzara-claxton,F,2006-03-12,4,lhb,rfm,allrounder
@@ -1473,31 +1709,44 @@ id,name,longName,fullName,slug,gender,dateOfBirth,countryId,battingStyles,bowlin
 1371878,K Kavindi,Kawya Kavindi,Kawya Kavindi,kawya-kavindi,F,2002-10-30,8,rhb,rmf,bowler
 1380033,NM Meepage,Nimasha Meepage,Nimasha Madushani Meepage,nimasha-meepage,F,1999-08-15,8,rhb,sla,bowler
 1380052,S Rani,Shathi Rani,Shathi Rani,shathi-rani,F,1998-06-19,25,rhb,,opening batter
-1404997,Humna Bilal,Humna Bilal,Humna Bilal,humna-bilal,F,2002-10-10,7,rhb,rm,
+1385478,P Molkenboer,Phebe Molkenboer,Phebe Molkenboer,phebe-molkenboer,F,2005-01-01,15,rhb,ob,batter
+1392241,CH van Koolwijk,Carlijn van Koolwijk,Carlijn Hendrika van Koolwijk,carlijn-van-koolwijk,F,2006-08-07,15,rhb,rm,
+1396115,JM Willathgamuwa,Jessica Willathgamuwa,Jessica Mary Willathgamuwa,jessica-willathgamuwa,F,2001-06-08,11,lhb,lm,
+1396116,CR Pagydyala,Chetna Pagydyala,Chetna Reddy Pagydyala,chetna-pagydyala,F,2008-05-04,11,lhb,sla,
+1404997,Humna Bilal,Humna Bilal,Humna Bilal,humna-bilal,F,2002-10-10,7,rhb,rm,bowler
 1404999,Amber Kainat,Amber Kainat,Amber Kainat,amber-kainat,F,,7,rhb,rmf,bowler
 1405003,Tasmia Rubab,Tasmia Rubab,Tasmia Rubab,tasmia-rubab,F,2002-12-20,7,rhb,lmf,bowler
 1405159,Shorifa Khatun,Shorifa Khatun,Shorifa Khatun,shorifa-khatun,F,1993-06-15,25,rhb,ob,
 1412478,Priya Mishra,Priya Mishra,Priya Mishra,priya-mishra,F,2004-06-04,6,rhb,lbg,bowler
+1425916,S Immadi,Saanvi Immadi,Saanvi Immadi,saanvi-immadi,F,2008-05-09,11,lhb,lb,allrounder
+1425919,M Madhavan,Maahi Madhavan,Maahi Madhavan,maahi-madhavan,F,2009-04-19,11,rhb,rm,allrounder
+1425920,L Rajadurai,Lakshmi Rajadurai,Lakshmi Rajadurai,lakshmi-rajadurai,F,2009-01-06,20,rhb,rm,
 1426125,A Kontopirakis,Alexia Kontopirakis,Alexia Kontopirakis,alexia-kontopirakis,F,2006-10-20,3,rhb,rm,
 1426780,Vaishnavi Sharma,Vaishnavi Sharma,Vaishnavi Narendra Sharma,vaishnavi-sharma,F,2005-12-18,6,lhb,sla,bowler
 1427037,S Gimhani,Shashini Gimhani,Wellage Shashini Gimhani Wijayarathna,shashini-gimhani,F,2008-12-09,8,rhb,lws,bowler
 1427057,MR Corteen-Coleman,Tilly Corteen-Coleman,Matilda Rose Corteen-Coleman,tilly-corteen-coleman,F,2007-08-23,1,lhb,sla,bowler
-1427355,G Kamalini,Gunalan Kamalini,Gunalan Kamalini,gunalan-kamalini,F,2008-07-20,6,lhb,lb,batter
+1427355,G Kamalini,Gunalan Kamalini,Gunalan Kamalini,gunalan-kamalini,F,2008-07-20,6,lhb,lb,wicketkeeper batter
 1429513,Habiba Islam,Habiba Islam,Habiba Islam Pinky,habiba-islam,F,2009-06-01,25,rhb,rm,bowler
 1435593,L Pemhiwa,Lorraine Pemhiwa,Lorraine Pemhiwa,lorraine-pemhiwa,F,2007-09-11,9,rhb,,
 1435594,R Pasipanodya,Runyararo Pasipanodya,Runyararo Pasipanodya,runyararo-pasipanodya,F,2007-06-13,9,rhb,,middle-order batter
 1440552,Sabikun Nahar Jesmin,Sabikun Nahar Jesmin,Sabikun Nahar Jesmin,sabikun-nahar-jesmin,F,1997-01-01,25,rhb,sla,bowler
 1440554,Taj Nehar,Taj Nehar,Taj Nehar,taj-nehar,F,1997-10-03,25,rhb,ob,top-order batter
 1444444,A Tector,Alice Tector,Alice Tector,alice-tector,F,2008-05-15,29,rhb,rm,allrounder
+1446538,G Fontenla,Gabriella Fontenla,Gabriella Fontenla,gabriella-fontenla,F,2008-06-01,30,rhb,rm,bowler
 1446941,T Makusha,Tendai Makusha,Tendai Makusha,tendai-makusha,F,2000-04-24,9,rhb,rm,bowler
 1446942,MS Kanchingwe,Melinda Kanchingwe,Melinda Sibusisiwe Kachingwe,melinda-kanchingwe,F,2007-04-12,9,rhb,,wicketkeeper batter
 1454733,L Hamilton,Lilli Hamilton,Lilli Hamilton,lilli-hamilton,F,2007-11-22,2,rhb,ob,bowler
+1455392,L Shetty,Lekha Shetty,Lekha Shetty,lekha-shetty,F,2005-10-20,11,rhb,rm,allrounder
 1464461,N Shree Charani,Shree Charani,Nallapureddy Shree Charani,shree-charani,F,2004-08-04,6,lhb,sla,bowler
 1464471,K Gaud,Kranti Gaud,Kranti Gaud,kranti-gaud,F,2003-08-11,6,rhb,rmf,bowler
 1469047,LA McBride,Lara McBride,Lara Ava McBride,lara-mcbride,F,2006-04-29,29,rhb,ob,bowler
+1469054,PN Sproul,Pippa Sproul,Pippa Nancy Sproul,pippa-sproul,F,2008-02-12,30,rhb,,wicketkeeper batter
 1480245,Saira Jabeen,Saira Jabeen,Saira Jabeen,saira-jabeen,F,2001-06-15,7,rhb,rmf,allrounder
+1482895,M Patwardhan,Mitali Patwardhan,Mitali Patwardhan,mitali-patwardhan,F,2005-09-12,11,rhb,,
 1483211,SS Upadhyay,Shuchi Upadhyay,Shuchi Sudhir Upadhyay,shuchi-upadhyay,F,2004-12-31,6,rhb,sla,bowler
+1484031,ATS Silva,Athige Silva,Athige Thilini Sashikala Silva,athige-silva,F,1994-05-24,27,rhb,rm,
 1486804,A Kato-Stafford,Ayaka Kato-Stafford,Ayaka Kato-Stafford,ayaka-kato-stafford,F,2010-03-29,2,rhb,lbg,
+1490217,Miria Raio,Miria Raio,Miria Raio,miria-raio,F,2005-05-05,20,rhb,,
 1503617,M Ayodhya,Mithali Ayodhya,Mithali Ayodhya,mithali-ayodhya,F,2007-01-13,8,rhb,rm,bowler
 1523186,Momina Riasat,Momina Riasat,Momina Riasat,momina-riasat,F,2002-12-17,7,lhb,sla,bowler
 1526007,E Brathwaite,Eboni Brathwaite,Eboni Brathwaite,eboni-brathwaite,F,2009-01-15,4,rhb,,opening batter
