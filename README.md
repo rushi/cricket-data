@@ -1,8 +1,9 @@
 # cricket-data
 
 Cricket data published as a SQLite database on GitHub Pages, explorable in
-the browser with a self-hosted, custom-themed copy of
-[Datasette Lite](https://github.com/simonw/datasette-lite), which runs
+the browser with a self-hosted. [rushi.github.io/cricket-data](https://rushi.github.io/cricket-data/)
+
+It is a custom-themed copy of [Datasette Lite](https://github.com/simonw/datasette-lite), which runs
 [Datasette](https://datasette.io/) in the browser to search, facet, query
 and export the data without a server.
 
